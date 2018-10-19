@@ -9,6 +9,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'airblade/vim-gitgutter'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
+    Plug 'kristijanhusak/deoplete-phpactor'
+    Plug 'phpactor/phpactor', { 'do': 'composer install' }
     Plug 'roxma/nvim-yarp'
     Plug 'roxma/vim-hug-neovim-rpc'
     Plug 'scrooloose/nerdcommenter'
@@ -17,8 +19,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-scripts/vim-auto-save'
     Plug 'w0rp/ale'
-    Plug 'phpactor/phpactor', { 'do': 'composer install' }
-    Plug 'kristijanhusak/deoplete-phpactor'
     Plug 'zivyangll/git-blame.vim'
 call plug#end()
 

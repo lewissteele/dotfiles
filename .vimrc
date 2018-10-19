@@ -20,7 +20,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'phpactor/phpactor', { 'do': 'composer install' }
     Plug 'kristijanhusak/deoplete-phpactor'
     Plug 'zivyangll/git-blame.vim'
-    Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 let g:ale_php_phpcs_standard="PSR2"
@@ -30,9 +29,6 @@ let g:auto_save = 1
 let g:auto_save_in_insert_mode = 0
 
 let g:deoplete#enable_at_startup = 1
-
-let g:airline_powerline_fonts = 1
-let g:airline_theme='light'
 
 syntax on
 filetype plugin on
@@ -47,9 +43,7 @@ set ignorecase
 set backspace=indent,eol,start
 set incsearch
 set clipboard=unnamed
-"set encoding=utf-8
 set synmaxcol=200
-"set colorcolumn=120
 set noswapfile
 set noshowmode
 

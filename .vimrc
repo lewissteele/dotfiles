@@ -6,6 +6,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
     Plug 'Shougo/deoplete.nvim'
+    Plug 'StanAngeloff/php.vim'
     Plug 'airblade/vim-gitgutter'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
@@ -28,6 +29,9 @@ let g:auto_save = 1
 let g:auto_save_in_insert_mode = 0
 let g:deoplete#enable_at_startup = 1
 let g:airline#extensions#tabline#enabled = 1
+
+let php_sql_query = 1
+let php_htmlInStrings = 1
 
 syntax on
 filetype plugin on

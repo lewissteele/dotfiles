@@ -24,11 +24,10 @@ call plug#end()
 
 let g:ale_php_phpcs_standard="PSR2"
 let g:ale_sign_column_always = 1
-
 let g:auto_save = 1
 let g:auto_save_in_insert_mode = 0
-
 let g:deoplete#enable_at_startup = 1
+let g:airline#extensions#tabline#enabled = 1
 
 syntax on
 filetype plugin on

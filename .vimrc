@@ -20,7 +20,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-scripts/vim-auto-save'
     Plug 'w0rp/ale'
-    Plug 'zivyangll/git-blame.vim'
 call plug#end()
 
 let g:ale_php_phpcs_standard="PSR2"

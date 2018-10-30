@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'Shougo/deoplete.nvim'
     Plug 'StanAngeloff/php.vim'
     Plug 'airblade/vim-gitgutter'
+    Plug 'jremmen/vim-ripgrep'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
     Plug 'kristijanhusak/deoplete-phpactor'
@@ -49,7 +50,7 @@ set synmaxcol=200
 set noswapfile
 set noshowmode
 
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <c-n> :NERDTreeToggle<CR>
 nnoremap <c-p> :GFiles<cr>
 tnoremap <esc> <c-\><c-n>
 
@@ -59,4 +60,3 @@ if executable('rg')
     set grepprg=rg\ --vimgrep\ --ignore-case
 endif
 
-command! -nargs=+ F execute 'silent grep!' <q-args> | cw | redraw!

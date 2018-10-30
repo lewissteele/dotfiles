@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'Shougo/deoplete.nvim'
     Plug 'StanAngeloff/php.vim'
     Plug 'airblade/vim-gitgutter'
+    Plug 'jelera/vim-javascript-syntax'
     Plug 'jremmen/vim-ripgrep'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
@@ -55,8 +56,3 @@ nnoremap <c-p> :GFiles<cr>
 tnoremap <esc> <c-\><c-n>
 
 highlight clear SignColumn
-
-if executable('rg')
-    set grepprg=rg\ --vimgrep\ --ignore-case
-endif
-

@@ -7,6 +7,7 @@ endif
 call plug#begin('~/.vim/plugged')
     Plug 'Shougo/deoplete.nvim'
     Plug 'StanAngeloff/php.vim'
+    Plug 'Yggdroot/indentLine'
     Plug 'airblade/vim-gitgutter'
     Plug 'jremmen/vim-ripgrep'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -30,7 +31,6 @@ let g:ale_sign_column_always = 1
 let g:auto_save = 1
 let g:auto_save_in_insert_mode = 0
 let g:deoplete#enable_at_startup = 1
-let g:airline#extensions#tabline#enabled = 1
 let g:javascript_plugin_jsdoc = 1
 
 let php_sql_query = 1

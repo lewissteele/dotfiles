@@ -8,11 +8,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'Shougo/deoplete.nvim'
     Plug 'StanAngeloff/php.vim'
     Plug 'airblade/vim-gitgutter'
-    Plug 'jelera/vim-javascript-syntax'
     Plug 'jremmen/vim-ripgrep'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
     Plug 'kristijanhusak/deoplete-phpactor'
+    Plug 'mxw/vim-jsx'
+    Plug 'pangloss/vim-javascript'
     Plug 'phpactor/phpactor', { 'do': 'composer install' }
     Plug 'roxma/nvim-yarp'
     Plug 'roxma/vim-hug-neovim-rpc'
@@ -30,6 +31,7 @@ let g:auto_save = 1
 let g:auto_save_in_insert_mode = 0
 let g:deoplete#enable_at_startup = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:javascript_plugin_jsdoc = 1
 
 let php_sql_query = 1
 let php_htmlInStrings = 1
@@ -50,6 +52,7 @@ set clipboard=unnamed
 set synmaxcol=200
 set noswapfile
 set noshowmode
+set ttymouse=xterm2
 
 nnoremap <c-n> :NERDTreeToggle<CR>
 nnoremap <c-p> :GFiles<cr>

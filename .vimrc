@@ -10,12 +10,13 @@ call plug#begin('~/.vim/plugged')
     Plug 'Yggdroot/indentLine'
     Plug 'airblade/vim-gitgutter'
     Plug 'jremmen/vim-ripgrep'
-    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+    Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
     Plug 'junegunn/fzf.vim'
     Plug 'kristijanhusak/deoplete-phpactor'
+    Plug 'leafgarland/typescript-vim'
     Plug 'mxw/vim-jsx'
     Plug 'pangloss/vim-javascript'
-    Plug 'phpactor/phpactor', { 'do': 'composer install' }
+    Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
     Plug 'roxma/nvim-yarp'
     Plug 'roxma/vim-hug-neovim-rpc'
     Plug 'scrooloose/nerdcommenter'
@@ -53,6 +54,7 @@ set synmaxcol=200
 set noswapfile
 set noshowmode
 set ttymouse=xterm2
+set wildmode=longest,list,full
 
 nnoremap <c-n> :NERDTreeToggle<CR>
 nnoremap <c-p> :GFiles<cr>

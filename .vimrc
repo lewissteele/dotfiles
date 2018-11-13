@@ -59,5 +59,6 @@ set wildmode=longest,list,full
 nnoremap <c-n> :NERDTreeToggle<CR>
 nnoremap <c-p> :GFiles<cr>
 tnoremap <esc> <c-\><c-n>
+inoremap jj <esc>
 
 highlight clear SignColumn

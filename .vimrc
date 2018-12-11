@@ -7,6 +7,7 @@ endif
 call plug#begin('~/.vim/plugged')
     Plug 'Shougo/deoplete.nvim'
     Plug 'StanAngeloff/php.vim'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'Yggdroot/indentLine'
     Plug 'airblade/vim-gitgutter'
     Plug 'jremmen/vim-ripgrep'
@@ -34,6 +35,8 @@ let g:auto_save_in_insert_mode = 0
 let g:deoplete#enable_at_startup = 1
 let g:javascript_plugin_jsdoc = 1
 
+let NERDTreeMinimalUI = 1
+
 let php_sql_query = 1
 let php_htmlInStrings = 1
 
@@ -55,6 +58,7 @@ set noswapfile
 set noshowmode
 set ttymouse=xterm2
 set wildmode=longest,list,full
+set hlsearch
 
 nnoremap <c-n> :NERDTreeToggle<CR>
 nnoremap <c-p> :GFiles<cr>

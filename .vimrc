@@ -42,6 +42,7 @@ let NERDTreeMinimalUI = 1
 
 let php_sql_query = 1
 let php_htmlInStrings = 1
+let loaded_matchparen = 1
 
 syntax on
 filetype plugin on

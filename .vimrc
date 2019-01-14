@@ -36,14 +36,12 @@ let g:auto_save_in_insert_mode = 0
 let g:deoplete#enable_at_startup = 1
 let g:javascript_plugin_jsdoc = 1
 let g:indentLine_setConceal = 0
-
 let g:terraform_align=1
 
 let NERDTreeMinimalUI = 1
-
 let php_sql_query = 1
 let php_htmlInStrings = 1
-"let loaded_matchparen = 1
+let loaded_matchparen = 1
 
 syntax on
 filetype plugin on
@@ -69,13 +67,5 @@ nnoremap <c-n> :NERDTreeToggle<CR>
 nnoremap <c-p> :GFiles<cr>
 tnoremap <esc> <c-\><c-n>
 inoremap jj <esc>
-
-"move codeblocks
-inoremap <c-j> <Esc>:m .+1<CR>==gi
-inoremap <c-k> <Esc>:m .-2<CR>==gi
-nnoremap <c-j> :m .+1<CR>==
-nnoremap <c-k> :m .-2<CR>==
-vnoremap <c-j> :m '>+1<CR>gv=gv
-vnoremap <c-k> :m '<-2<CR>gv=gv
 
 highlight clear SignColumn

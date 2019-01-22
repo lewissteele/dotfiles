@@ -16,6 +16,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'kristijanhusak/deoplete-phpactor'
     Plug 'leafgarland/typescript-vim'
+    Plug 'moby/moby' , {'rtp': '/contrib/syntax/vim/'}
     Plug 'mxw/vim-jsx'
     Plug 'pangloss/vim-javascript'
     Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
@@ -24,7 +25,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdcommenter'
     Plug 'scrooloose/nerdtree'
     Plug 'tpope/vim-fugitive'
-    Plug 'vim-airline/vim-airline'
     Plug 'vim-scripts/vim-auto-save'
     Plug 'w0rp/ale'
 call plug#end()
@@ -58,7 +58,7 @@ set incsearch
 set clipboard=unnamed
 set synmaxcol=200
 set noswapfile
-set noshowmode
+"set noshowmode
 set ttymouse=xterm2
 set wildmode=longest,list,full
 set hlsearch

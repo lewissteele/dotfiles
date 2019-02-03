@@ -29,14 +29,20 @@ call plug#begin('~/.vim/plugged')
     Plug 'w0rp/ale'
 call plug#end()
 
-let g:ale_php_phpcs_standard="PSR2"
+let g:ale_php_phpcs_standard = "PSR2"
+let g:ale_php_phpcbf_standard = "PSR2"
 let g:ale_sign_column_always = 1
 let g:auto_save = 1
 let g:auto_save_in_insert_mode = 0
 let g:deoplete#enable_at_startup = 1
 let g:javascript_plugin_jsdoc = 1
-let g:indentLine_setConceal = 0
-let g:terraform_align=1
+let g:terraform_align = 1
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['eslint'],
+\   'php': ['php_cs_fixer', 'phpcbf']
+\}
+let g:ale_fix_on_save = 1
 
 let NERDTreeMinimalUI = 1
 let php_sql_query = 1
@@ -46,7 +52,7 @@ let loaded_matchparen = 1
 syntax on
 filetype plugin on
 
-set mouse=a
+"set mouse=a
 set smartindent
 set tabstop=4
 set shiftwidth=4
@@ -62,6 +68,7 @@ set noswapfile
 set ttymouse=xterm2
 set wildmode=longest,list,full
 set hlsearch
+set spelllang=en_gb
 
 nnoremap <c-n> :NERDTreeToggle<CR>
 nnoremap <c-p> :GFiles<cr>
@@ -69,3 +76,5 @@ tnoremap <esc> <c-\><c-n>
 inoremap jj <esc>
 
 highlight clear SignColumn
+
+autocmd Filetype json let g:indentLine_enabled = 0 " plugin hides quotes in json files

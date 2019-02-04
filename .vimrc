@@ -8,7 +8,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'Shougo/deoplete.nvim'
     Plug 'StanAngeloff/php.vim'
     Plug 'Xuyuanp/nerdtree-git-plugin'
-    Plug 'Yggdroot/indentLine'
     Plug 'airblade/vim-gitgutter'
     Plug 'hashivim/vim-terraform'
     Plug 'jremmen/vim-ripgrep'
@@ -68,5 +67,3 @@ inoremap jj <esc>
 nnoremap <c-n> :NERDTreeToggle<CR>
 nnoremap <c-p> :GFiles<cr>
 tnoremap <esc> <c-\><c-n>
-
-autocmd Filetype json let g:indentLine_enabled = 0

@@ -16,7 +16,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'kristijanhusak/deoplete-phpactor'
     Plug 'leafgarland/typescript-vim'
-    Plug 'moby/moby' , {'rtp': '/contrib/syntax/vim/'}
+    Plug 'moby/moby', {'rtp': '/contrib/syntax/vim/'}
     Plug 'mxw/vim-jsx'
     Plug 'pangloss/vim-javascript'
     Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}

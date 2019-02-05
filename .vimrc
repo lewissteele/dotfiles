@@ -9,6 +9,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'StanAngeloff/php.vim'
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'airblade/vim-gitgutter'
+    Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
     Plug 'hashivim/vim-terraform'
     Plug 'jremmen/vim-ripgrep'
     Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
@@ -34,12 +35,14 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \   'php': ['phpcbf']
 \}
+let g:ale_lint_on_insert_leave = 1
 let g:ale_php_phpcbf_standard = "PSR2"
 let g:ale_php_phpcs_standard = "PSR2"
 let g:ale_sign_column_always = 1
 let g:auto_save = 1
 let g:auto_save_in_insert_mode = 0
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#ternjs#types = 1
 let g:javascript_plugin_jsdoc = 1
 let g:terraform_align = 1
 

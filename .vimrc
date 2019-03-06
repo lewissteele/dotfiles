@@ -4,24 +4,20 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('~/.vim/plugged')
-    Plug 'Shougo/deoplete.nvim'
+call plug#begin()
     Plug 'StanAngeloff/php.vim'
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'airblade/vim-gitgutter'
-    Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+    Plug 'ap/vim-css-color'
     Plug 'hashivim/vim-terraform'
     Plug 'jremmen/vim-ripgrep'
     Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
     Plug 'junegunn/fzf.vim'
-    Plug 'kristijanhusak/deoplete-phpactor'
     Plug 'leafgarland/typescript-vim'
     Plug 'moby/moby', {'rtp': '/contrib/syntax/vim/'}
     Plug 'mxw/vim-jsx'
+    Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
     Plug 'pangloss/vim-javascript'
-    Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
     Plug 'scrooloose/nerdcommenter'
     Plug 'scrooloose/nerdtree'
     Plug 'tpope/vim-fugitive'
@@ -29,20 +25,13 @@ call plug#begin('~/.vim/plugged')
     Plug 'w0rp/ale'
 call plug#end()
 
-let g:ale_fix_on_save = 1
-let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'javascript': ['eslint'],
-\   'php': ['phpcbf']
-\}
 let g:ale_lint_on_insert_leave = 1
 let g:ale_php_phpcbf_standard = "PSR2"
 let g:ale_php_phpcs_standard = "PSR2"
 let g:ale_sign_column_always = 1
+let g:ale_virtualtext_cursor = 1
 let g:auto_save = 1
 let g:auto_save_in_insert_mode = 0
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#sources#ternjs#types = 1
 let g:javascript_plugin_jsdoc = 1
 let g:terraform_align = 1
 
@@ -51,6 +40,7 @@ let loaded_matchparen = 1
 let php_htmlInStrings = 1
 let php_sql_query = 1
 
+set background=light
 set backspace=indent,eol,start
 set clipboard=unnamed
 set expandtab
@@ -70,3 +60,9 @@ inoremap jj <esc>
 nnoremap <c-n> :NERDTreeToggle<CR>
 nnoremap <c-p> :GFiles<cr>
 tnoremap <esc> <c-\><c-n>
+
+augroup start_vim
+    autocmd!
+    autocmd FileType php setlocal iskeyword+=$
+    autocmd BufWritePost init.vim source %
+augroup END

@@ -40,13 +40,13 @@ let loaded_matchparen = 1
 let php_htmlInStrings = 1
 let php_sql_query = 1
 
-set background=light
 set backspace=indent,eol,start
 set clipboard=unnamed
 set expandtab
 set hlsearch
 set ignorecase
 set incsearch
+set mouse=a
 set noswapfile
 set number
 set shiftwidth=4

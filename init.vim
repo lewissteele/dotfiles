@@ -42,6 +42,7 @@ let php_sql_query = 1
 
 set backspace=indent,eol,start
 set clipboard=unnamed
+set colorcolumn=80
 set expandtab
 set hlsearch
 set ignorecase
@@ -49,12 +50,14 @@ set incsearch
 set mouse=a
 set noswapfile
 set number
-set shiftwidth=4
+set shiftwidth=2
 set smartindent
 set spelllang=en_gb
 set synmaxcol=200
-set tabstop=4
+set tabstop=2
 set wildmode=longest,list,full
+
+highlight ColorColumn ctermbg=darkgrey
 
 inoremap jj <esc>
 nnoremap <c-n> :NERDTreeToggle<CR>
@@ -63,6 +66,6 @@ tnoremap <esc> <c-\><c-n>
 
 augroup start_vim
     autocmd!
-    autocmd FileType php setlocal iskeyword+=$
+    autocmd FileType php setlocal iskeyword+=$ shiftwidth=4 tabstop=4
     autocmd BufWritePost init.vim source %
 augroup END

@@ -3,4 +3,4 @@
 !.config/nvim/
 .config/nvim/plugged/
 !.config/coc/
-
+.config/coc/extensions/node_modules/

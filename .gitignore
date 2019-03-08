@@ -4,3 +4,4 @@
 .config/nvim/plugged/
 !.config/coc/
 .config/coc/extensions/node_modules/
+.config/coc/extensions/yarn-error.log

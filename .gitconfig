@@ -1,5 +1,5 @@
 [user]
   name = Lewis Steele
-	email = lewis.steele@sykescottages.co.uk
+  email = lewis.steele@sykescottages.co.uk
 [core]
-	editor = /usr/local/bin/vim
+  editor = /usr/local/bin/vim

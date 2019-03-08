@@ -21,10 +21,9 @@ call plug#begin()
     Plug 'scrooloose/nerdcommenter'
     Plug 'scrooloose/nerdtree'
     Plug 'tpope/vim-fugitive'
+    Plug 'tveskag/nvim-blame-line'
     Plug 'vim-scripts/vim-auto-save'
     Plug 'w0rp/ale'
-
-    Plug 'tveskag/nvim-blame-line'
 call plug#end()
 
 let g:ale_lint_on_insert_leave = 1

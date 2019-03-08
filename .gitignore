@@ -1,0 +1,6 @@
+.DS_Store
+.config/*
+!.config/nvim/
+.config/nvim/plugged
+!.config/coc/
+

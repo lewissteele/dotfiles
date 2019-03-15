@@ -5,25 +5,26 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin()
-    Plug 'StanAngeloff/php.vim'
-    Plug 'Xuyuanp/nerdtree-git-plugin'
-    Plug 'airblade/vim-gitgutter'
-    Plug 'ap/vim-css-color'
-    Plug 'hashivim/vim-terraform'
-    Plug 'jremmen/vim-ripgrep'
-    Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
-    Plug 'junegunn/fzf.vim'
-    Plug 'leafgarland/typescript-vim'
-    Plug 'moby/moby', {'rtp': '/contrib/syntax/vim/'}
-    Plug 'mxw/vim-jsx'
-    Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
-    Plug 'pangloss/vim-javascript'
-    Plug 'scrooloose/nerdcommenter'
-    Plug 'scrooloose/nerdtree'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tveskag/nvim-blame-line'
-    Plug 'vim-scripts/vim-auto-save'
-    Plug 'w0rp/ale'
+  Plug 'StanAngeloff/php.vim'
+  Plug 'Xuyuanp/nerdtree-git-plugin'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'ap/vim-css-color'
+  Plug 'ciaranm/detectindent'
+  Plug 'hashivim/vim-terraform'
+  Plug 'jremmen/vim-ripgrep'
+  Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
+  Plug 'junegunn/fzf.vim'
+  Plug 'leafgarland/typescript-vim'
+  Plug 'moby/moby', {'rtp': '/contrib/syntax/vim/'}
+  Plug 'mxw/vim-jsx'
+  Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+  Plug 'pangloss/vim-javascript'
+  Plug 'scrooloose/nerdcommenter'
+  Plug 'scrooloose/nerdtree'
+  Plug 'tpope/vim-fugitive'
+  Plug 'tveskag/nvim-blame-line'
+  Plug 'vim-scripts/vim-auto-save'
+  Plug 'w0rp/ale'
 call plug#end()
 
 let g:ale_lint_on_enter = 0
@@ -67,7 +68,8 @@ nnoremap <c-p> :GFiles<cr>
 tnoremap <esc> <c-\><c-n>
 
 augroup start_vim
-    autocmd!
-    autocmd FileType php setlocal iskeyword+=$ shiftwidth=4 tabstop=4
-    autocmd BufWritePost init.vim source %
+  autocmd!
+  autocmd FileType php setlocal iskeyword+=$ shiftwidth=4 tabstop=4
+  autocmd BufWritePost init.vim source %
+  autocmd BufEnter * :DetectIndent
 augroup END

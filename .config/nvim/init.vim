@@ -26,6 +26,7 @@ call plug#begin()
     Plug 'w0rp/ale'
 call plug#end()
 
+let g:ale_lint_on_enter = 0
 let g:ale_lint_on_insert_leave = 1
 let g:ale_php_phpcbf_standard = "PSR2"
 let g:ale_php_phpcs_standard = "PSR2"

@@ -29,6 +29,7 @@ call plug#end()
 
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_insert_leave = 1
+let g:ale_lint_on_text_changed = 0
 let g:ale_php_phpcbf_standard = "PSR2"
 let g:ale_php_phpcs_standard = "PSR2"
 let g:ale_sign_column_always = 1
@@ -39,10 +40,13 @@ let g:javascript_plugin_jsdoc = 1
 let g:terraform_align = 1
 
 let NERDTreeMinimalUI = 1
+let NERDTreeShowHidden = 1
 let loaded_matchparen = 1
 let php_htmlInStrings = 1
 let php_sql_query = 1
 
+set autoindent
+set background=light
 set backspace=indent,eol,start
 set clipboard=unnamed
 set colorcolumn=80
@@ -65,6 +69,7 @@ highlight ColorColumn ctermbg=darkgrey
 inoremap jj <esc>
 nnoremap <c-n> :NERDTreeToggle<CR>
 nnoremap <c-p> :GFiles<cr>
+nnoremap <silent> K :call CocAction('doHover')<cr>
 tnoremap <esc> <c-\><c-n>
 
 augroup start_vim

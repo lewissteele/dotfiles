@@ -21,6 +21,7 @@ call plug#begin()
   Plug 'pangloss/vim-javascript'
   Plug 'scrooloose/nerdcommenter'
   Plug 'scrooloose/nerdtree'
+  Plug 'tomasiser/vim-code-dark'
   Plug 'tpope/vim-fugitive'
   Plug 'tveskag/nvim-blame-line'
   Plug 'vim-scripts/vim-auto-save'
@@ -44,12 +45,12 @@ let NERDTreeShowHidden = 1
 let loaded_matchparen = 1
 let php_htmlInStrings = 1
 let php_sql_query = 1
+let php_var_selector_is_identifier = 1
 
 set autoindent
-set background=light
 set backspace=indent,eol,start
 set clipboard=unnamed
-set colorcolumn=80
+set colorcolumn=81
 set expandtab
 set hlsearch
 set ignorecase
@@ -64,8 +65,6 @@ set synmaxcol=200
 set tabstop=2
 set wildmode=longest,list,full
 
-highlight ColorColumn ctermbg=darkgrey
-
 inoremap jj <esc>
 nnoremap <c-n> :NERDTreeToggle<CR>
 nnoremap <c-p> :GFiles<cr>
@@ -78,3 +77,5 @@ augroup start_vim
   autocmd BufWritePost init.vim source %
   autocmd BufEnter * :DetectIndent
 augroup END
+
+colorscheme codedark

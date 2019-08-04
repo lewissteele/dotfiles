@@ -5,6 +5,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin()
+  Plug 'NLKNguyen/papercolor-theme'
   Plug 'StanAngeloff/php.vim'
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'airblade/vim-gitgutter'
@@ -26,8 +27,6 @@ call plug#begin()
   Plug 'tveskag/nvim-blame-line'
   Plug 'vim-scripts/vim-auto-save'
   Plug 'w0rp/ale'
-
-  Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
 
 let g:ale_lint_on_enter = 0
@@ -51,7 +50,6 @@ let php_var_selector_is_identifier = 1
 
 set autoindent
 set backspace=indent,eol,start
-"set clipboard=unnamed
 set clipboard+=unnamedplus
 set colorcolumn=81
 set expandtab
@@ -76,9 +74,8 @@ tnoremap <esc> <c-\><c-n>
 
 augroup start_vim
   autocmd!
-  autocmd FileType php setlocal iskeyword+=$ shiftwidth=4 tabstop=4
+  autocmd FileType php setlocal iskeyword+=$
   autocmd BufWritePost init.vim source %
-  autocmd BufEnter * :DetectIndent
 augroup END
 
 "colorscheme codedark

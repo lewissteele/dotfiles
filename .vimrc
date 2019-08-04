@@ -26,6 +26,8 @@ call plug#begin()
   Plug 'tveskag/nvim-blame-line'
   Plug 'vim-scripts/vim-auto-save'
   Plug 'w0rp/ale'
+
+  Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
 
 let g:ale_lint_on_enter = 0
@@ -49,7 +51,8 @@ let php_var_selector_is_identifier = 1
 
 set autoindent
 set backspace=indent,eol,start
-set clipboard=unnamed
+"set clipboard=unnamed
+set clipboard+=unnamedplus
 set colorcolumn=81
 set expandtab
 set hlsearch
@@ -58,11 +61,11 @@ set incsearch
 set mouse=a
 set noswapfile
 set number
-set shiftwidth=2
+set shiftwidth=4
 set smartindent
 set spelllang=en_gb
 set synmaxcol=200
-set tabstop=2
+set tabstop=4
 set wildmode=longest,list,full
 
 inoremap jj <esc>
@@ -78,4 +81,7 @@ augroup start_vim
   autocmd BufEnter * :DetectIndent
 augroup END
 
-colorscheme codedark
+"colorscheme codedark
+
+set background=light
+colorscheme PaperColor

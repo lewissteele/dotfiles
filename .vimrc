@@ -10,6 +10,7 @@ call plug#begin()
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'airblade/vim-gitgutter'
   Plug 'ap/vim-css-color'
+  Plug 'christoomey/vim-tmux-navigator'
   Plug 'ciaranm/detectindent'
   Plug 'hashivim/vim-terraform'
   Plug 'jremmen/vim-ripgrep'

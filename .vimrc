@@ -16,13 +16,12 @@ call plug#begin()
   Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
   Plug 'junegunn/fzf.vim'
   Plug 'leafgarland/typescript-vim'
+  Plug 'maxmellon/vim-jsx-pretty'
   Plug 'moby/moby', {'rtp': '/contrib/syntax/vim/'}
-  Plug 'mxw/vim-jsx'
   Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
   Plug 'pangloss/vim-javascript'
   Plug 'scrooloose/nerdcommenter'
   Plug 'scrooloose/nerdtree'
-  Plug 'tomasiser/vim-code-dark'
   Plug 'tpope/vim-fugitive'
   Plug 'tveskag/nvim-blame-line'
   Plug 'vim-scripts/vim-auto-save'
@@ -70,15 +69,8 @@ inoremap jj <esc>
 nnoremap <c-n> :NERDTreeToggle<CR>
 nnoremap <c-p> :GFiles<cr>
 nnoremap <silent> K :call CocAction('doHover')<cr>
+nnoremap p p`]<Esc>
 tnoremap <esc> <c-\><c-n>
-
-augroup start_vim
-  autocmd!
-  autocmd FileType php setlocal iskeyword+=$
-  autocmd BufWritePost init.vim source %
-augroup END
-
-"colorscheme codedark
 
 set background=light
 colorscheme PaperColor

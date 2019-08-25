@@ -32,7 +32,6 @@ call plug#end()
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 0
-let g:ale_php_phpcs_standard = 'PSR2'
 let g:ale_sign_column_always = 1
 let g:ale_virtualtext_cursor = 1
 let g:auto_save = 1

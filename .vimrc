@@ -55,7 +55,7 @@ set expandtab
 set hlsearch
 set ignorecase
 set incsearch
-set mouse=a
+"set mouse=a
 set noswapfile
 set number
 set shiftwidth=4

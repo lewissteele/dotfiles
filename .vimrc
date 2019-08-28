@@ -72,4 +72,18 @@ nnoremap <silent> K :call CocAction('doHover')<cr>
 nnoremap p p`]<Esc>
 tnoremap <esc> <c-\><c-n>
 
+let s:coc_extensions = [
+    \'coc-css',
+    \'coc-html',
+    \'coc-json',
+    \'coc-phpls',
+    \'coc-tslint',
+    \'coc-tsserver',
+    \'coc-yaml',
+\]
+
+for extension in s:coc_extensions
+    call coc#add_extension(extension)
+endfor
+
 colorscheme PaperColor

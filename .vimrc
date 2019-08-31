@@ -12,6 +12,7 @@ call plug#begin()
   Plug 'ap/vim-css-color'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'ciaranm/detectindent'
+  Plug 'editorconfig/editorconfig-vim'
   Plug 'hashivim/vim-terraform'
   Plug 'jremmen/vim-ripgrep'
   Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
@@ -55,7 +56,6 @@ set expandtab
 set hlsearch
 set ignorecase
 set incsearch
-"set mouse=a
 set noswapfile
 set number
 set shiftwidth=4

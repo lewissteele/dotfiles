@@ -74,6 +74,7 @@ tnoremap <esc> <c-\><c-n>
 
 let s:coc_extensions = [
     \'coc-css',
+    \'coc-docker',
     \'coc-html',
     \'coc-json',
     \'coc-phpls',

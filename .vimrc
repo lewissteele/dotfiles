@@ -17,6 +17,7 @@ call plug#begin()
   Plug 'jremmen/vim-ripgrep'
   Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
   Plug 'junegunn/fzf.vim'
+  Plug 'kamykn/spelunker.vim'
   Plug 'leafgarland/typescript-vim'
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'moby/moby', {'rtp': '/contrib/syntax/vim/'}
@@ -39,6 +40,8 @@ let g:auto_save = 1
 let g:auto_save_in_insert_mode = 0
 let g:javascript_plugin_jsdoc = 1
 let g:terraform_align = 1
+
+let g:ale_php_phpstan_level = 'max'
 
 let NERDTreeMinimalUI = 1
 let NERDTreeShowHidden = 1

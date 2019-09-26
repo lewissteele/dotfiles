@@ -51,7 +51,6 @@ let php_sql_query = 1
 let php_var_selector_is_identifier = 1
 
 set autoindent
-"set background=light
 set backspace=indent,eol,start
 set clipboard+=unnamedplus
 set colorcolumn=81

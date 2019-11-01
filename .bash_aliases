@@ -1,4 +1,5 @@
 alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
+alias sudo='sudo '
 alias vim='nvim'

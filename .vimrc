@@ -59,6 +59,7 @@ set hlsearch
 set ignorecase
 set incsearch
 set noswapfile
+set nowrap
 set number
 set shiftwidth=4
 set smartindent

@@ -12,6 +12,7 @@ call plug#begin()
   Plug 'ap/vim-css-color'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'ciaranm/detectindent'
+  Plug 'digitaltoad/vim-pug'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'hashivim/vim-terraform'
   Plug 'jremmen/vim-ripgrep'

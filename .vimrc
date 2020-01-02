@@ -31,6 +31,7 @@ call plug#begin()
   Plug 'tveskag/nvim-blame-line'
   Plug 'vim-scripts/vim-auto-save'
   Plug 'w0rp/ale'
+  Plug 'Lokaltog/vim-monotone'
 call plug#end()
 
 let g:ale_lint_on_enter = 0
@@ -92,4 +93,4 @@ for extension in s:coc_extensions
   call coc#add_extension(extension)
 endfor
 
-colorscheme PaperColor
+colorscheme monotone

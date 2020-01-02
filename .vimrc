@@ -5,6 +5,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin()
+  Plug 'Lokaltog/vim-monotone'
   Plug 'NLKNguyen/papercolor-theme'
   Plug 'StanAngeloff/php.vim'
   Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -31,7 +32,6 @@ call plug#begin()
   Plug 'tveskag/nvim-blame-line'
   Plug 'vim-scripts/vim-auto-save'
   Plug 'w0rp/ale'
-  Plug 'Lokaltog/vim-monotone'
 call plug#end()
 
 let g:ale_lint_on_enter = 0

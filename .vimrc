@@ -5,7 +5,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin()
-  Plug 'Lokaltog/vim-monotone'
   Plug 'NLKNguyen/papercolor-theme'
   Plug 'StanAngeloff/php.vim'
   Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -93,4 +92,4 @@ for extension in s:coc_extensions
   call coc#add_extension(extension)
 endfor
 
-colorscheme monotone
+colorscheme PaperColor

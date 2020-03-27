@@ -1,0 +1,13 @@
+default_hour: 9
+default_minute: 0
+editor: /home/linuxbrew/.linuxbrew/bin/nvim
+encrypt: false
+highlight: true
+indent_character: '|'
+journals:
+  default: /home/lewis/Dropbox/jrnl.txt
+linewrap: 79
+tagsymbols: '@'
+template: false
+timeformat: '%Y-%m-%d %H:%M'
+version: v2.2

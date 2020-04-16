@@ -10,7 +10,7 @@ encrypt: false
 highlight: true
 indent_character: '|'
 journals:
-  default: /home/lewis/Dropbox/jrnl.txt
+  default: /home/lewis/Documents/jrnl.txt
 linewrap: 79
 tagsymbols: '@'
 template: false

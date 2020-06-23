@@ -28,6 +28,7 @@ call plug#begin()
   Plug 'scrooloose/nerdcommenter'
   Plug 'scrooloose/nerdtree'
   Plug 'shime/vim-livedown'
+  Plug 'tpope/vim-eunuch'
   Plug 'tpope/vim-fugitive'
   Plug 'tveskag/nvim-blame-line'
   Plug 'vim-scripts/vim-auto-save'
@@ -43,6 +44,7 @@ let g:ale_virtualtext_cursor = 1
 let g:auto_save = 1
 let g:auto_save_in_insert_mode = 0
 let g:javascript_plugin_jsdoc = 1
+let g:rg_highlight = 1
 let g:terraform_align = 1
 
 let NERDTreeMinimalUI = 1
@@ -82,7 +84,6 @@ let s:coc_extensions = [
   \'coc-html',
   \'coc-json',
   \'coc-phpls',
-  \'coc-tslint',
   \'coc-tsserver',
   \'coc-yaml',
 \]

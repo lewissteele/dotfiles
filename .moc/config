@@ -69,13 +69,13 @@
 #
 # Example:    MusicDir = "/home/joe/music"
 #
-MusicDir = "/home/lewis/Music"
+MusicDir = "$HOME/Music"
 
 # Start in the music directory by default?  If set to 'no', start
 # in the directory being viewed when the was client last active or,
 # as a last resort, the directory in which the client is being started.
 # A single directory on the command line takes precedence.
-#StartInMusicDir = no
+StartInMusicDir = yes
 
 # The number of lines which are retained in an in-memory circular logging
 # buffer.  A value of zero indicates that lines will be written directly
@@ -239,7 +239,7 @@ Theme = dark
 #
 # Example:    XTermTheme = transparent-background
 #
-# XTermTheme = 
+# XTermTheme =
 
 # Should MOC try to autoload the default lyrics file for an audio?  (The
 # default lyrics file is a text file with the same file name as the audio

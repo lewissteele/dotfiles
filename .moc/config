@@ -69,13 +69,13 @@
 #
 # Example:    MusicDir = "/home/joe/music"
 #
-MusicDir = "$HOME/Music"
+#MusicDir =
 
 # Start in the music directory by default?  If set to 'no', start
 # in the directory being viewed when the was client last active or,
 # as a last resort, the directory in which the client is being started.
 # A single directory on the command line takes precedence.
-StartInMusicDir = yes
+#StartInMusicDir = no
 
 # The number of lines which are retained in an in-memory circular logging
 # buffer.  A value of zero indicates that lines will be written directly

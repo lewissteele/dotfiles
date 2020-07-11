@@ -72,23 +72,9 @@
 #MusicDir =
 
 # Start in the music directory by default?  If set to 'no', start
-# in the directory being viewed when the was client last active or,
-# as a last resort, the directory in which the client is being started.
-# A single directory on the command line takes precedence.
+# in the current directory by default.  A single directory on
+# the command line takes precedence.
 #StartInMusicDir = no
-
-# The number of lines which are retained in an in-memory circular logging
-# buffer.  A value of zero indicates that lines will be written directly
-# to the log file, otherwise the latest CircularLogSize lines are retained
-# in memory and not written to the log file until the MOC client or server
-# are shutdown.  If the client or server terminates abnormally then the
-# log lines are lost.
-#
-# This option is intended to help identify problems which occur infrequently
-# and for which the amount of disk space consumed by logging would otherwise
-# be a limiting factor.  Obviously the memory footprint will increase in
-# proportion to the value of this option.
-#CircularLogSize = 0
 
 # How to sort?  FileName is the option's only value for now.
 #Sort = FileName
@@ -239,7 +225,7 @@ Theme = dark
 #
 # Example:    XTermTheme = transparent-background
 #
-# XTermTheme =
+#XTermTheme =
 
 # Should MOC try to autoload the default lyrics file for an audio?  (The
 # default lyrics file is a text file with the same file name as the audio
@@ -394,11 +380,10 @@ SavePlaylist = no
 # audio), while the MIME media types will cause Internet audio streams to
 # be assessed on content (which may be either Vorbis or Speex).
 #
-#PreferredDecoders += ogg(vorbis,*,ffmpeg):oga(vorbis,*,ffmpeg):ogv(ffmpeg)
-#PreferredDecoders += application/ogg(vorbis):audio/ogg(vorbis)
-#PreferredDecoders += flac(flac,*,ffmpeg)
-#PreferredDecoders += opus(opus,ffmpeg)
+#PreferredDecoders += ogg(vorbis,ffmpeg):oga(vorbis,ffmpeg):ogv(ffmpeg)
+#PreferredDecoders += opus(ffmpeg)
 #PreferredDecoders += spx(speex)
+#PreferredDecoders += application/ogg(vorbis):audio/ogg(vorbis)
 
 # Which resampling method to use.  There are a few methods of resampling
 # sound supported by libresamplerate.  The default is 'Linear') which is
@@ -660,10 +645,13 @@ Layout2 = directory(0,0,100%,100%):playlist(0,0,100%,100%)
 #SidPlay2_PlayMode = "M"
 
 # Use start-song information from SID ('yes') or start at first song
-# ('no').  Songs before the start-song won't be played.
+# ('no').  Songs before the start-song won't be played.  (Note that this
+# option previously took the values 1 and 0; these are now deprecated
+# in favour of 'yes' and 'no'.)
 #SidPlay2_StartAtStart = yes
 
-# Play sub-tunes.
+# Play sub-tunes.  (Note that this option previously took the values 1
+# and 0; these are now deprecated in favour of 'yes' and 'no'.)
 #SidPlay2_PlaySubTunes = yes
 
 # Run the OnSongChange command when a new song starts playing.
@@ -693,10 +681,7 @@ Layout2 = directory(0,0,100%,100%):playlist(0,0,100%,100%)
 
 # Run the OnStop command (full path, no arguments) when MOC changes state
 # to stopped (i.e., when user stopped playing or changes a song).
-#
-# Example:    OnStop = "/home/jack/.moc/myscript_on_stop"
-#
-#OnStop =
+#OnStop = "/home/jack/.moc/myscript_on_stop"
 
 # This option determines which song to play after finishing all the songs
 # in the queue.  Setting this to 'yes' causes MOC to play the song which

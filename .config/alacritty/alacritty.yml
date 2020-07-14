@@ -561,17 +561,14 @@
 
 # KDE Breeze (Ported from Konsole)
 colors:
-  # Default colors
   primary:
     background: '0x232627'
     foreground: '0xfcfcfc'
-
     dim_foreground: '0xeff0f1'
     bright_foreground: '0xffffff'
     dim_background: '0x31363b'
     bright_background: '0x000000'
 
-  # Normal colors
   normal:
     black: '0x232627'
     red: '0xed1515'
@@ -582,7 +579,6 @@ colors:
     cyan: '0x1abc9c'
     white: '0xfcfcfc'
 
-  # Bright colors
   bright:
     black: '0x7f8c8d'
     red: '0xc0392b'
@@ -593,7 +589,6 @@ colors:
     cyan: '0x16a085'
     white: '0xffffff'
 
-  # Dim colors
   dim:
     black: '0x31363b'
     red: '0x783228'
@@ -603,3 +598,22 @@ colors:
     magenta: '0x614a73'
     cyan: '0x186c60'
     white: '0x63686d'
+
+font:
+  normal:
+    family: Ubuntu Mono
+    style: Regular
+
+  bold:
+    family: Ubuntu Mono
+    style: Bold
+
+  italic:
+    family: Ubuntu Mono
+    style: Italic
+
+  bold_italic:
+    family: Ubuntu Mono
+    style: Bold Italic
+
+  size: 13.0

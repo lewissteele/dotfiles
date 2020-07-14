@@ -5,12 +5,12 @@ colors:
   title: none
 default_hour: 9
 default_minute: 0
-editor: /home/linuxbrew/.linuxbrew/bin/nvim
+editor: /usr/bin/nvim
 encrypt: false
 highlight: true
 indent_character: '|'
 journals:
-  default: /home/lewis/Documents/jrnl.txt
+  default: /home/lewis/.local/share/jrnl/journal.txt
 linewrap: 79
 tagsymbols: '@'
 template: false

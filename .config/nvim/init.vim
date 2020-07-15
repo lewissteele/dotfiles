@@ -92,4 +92,4 @@ for extension in s:coc_extensions
   call coc#add_extension(extension)
 endfor
 
-colorscheme monotone
+colorscheme PaperColor

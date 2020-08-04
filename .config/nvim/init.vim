@@ -72,7 +72,7 @@ set synmaxcol=200
 set tabstop=4
 set wildmode=longest,list,full
 
-nnoremap <c-n> :NERDTreeToggle<CR>
+nnoremap <c-n> :NERDTreeToggle<cr>
 nnoremap <c-p> :GFiles<cr>
 nnoremap <silent> K :call CocAction('doHover')<cr>
 nnoremap p p`]<Esc>

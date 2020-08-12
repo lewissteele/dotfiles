@@ -3,3 +3,5 @@
   email = lewis.steele@pm.me
 [core]
   editor = nvim
+[commit]
+  gpgsign = true

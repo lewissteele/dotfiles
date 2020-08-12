@@ -23,6 +23,7 @@ call plug#begin()
   Plug 'leafgarland/typescript-vim'
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'moby/moby', {'rtp': '/contrib/syntax/vim/'}
+  Plug 'mustache/vim-mustache-handlebars'
   Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
   Plug 'pangloss/vim-javascript'
   Plug 'scrooloose/nerdcommenter'
@@ -44,6 +45,7 @@ let g:ale_virtualtext_cursor = 1
 let g:auto_save = 1
 let g:auto_save_in_insert_mode = 0
 let g:javascript_plugin_jsdoc = 1
+let g:rg_command = 'rg --vimgrep --fixed-strings'
 let g:rg_highlight = 1
 let g:terraform_align = 1
 
@@ -65,11 +67,11 @@ set incsearch
 set noswapfile
 set nowrap
 set number
-set shiftwidth=4
+set shiftwidth=2
 set smartindent
 set spelllang=en_gb
 set synmaxcol=200
-set tabstop=4
+set tabstop=2
 set wildmode=longest,list,full
 
 nnoremap <c-n> :NERDTreeToggle<cr>

@@ -45,7 +45,7 @@ let g:ale_virtualtext_cursor = 1
 let g:auto_save = 1
 let g:auto_save_in_insert_mode = 0
 let g:javascript_plugin_jsdoc = 1
-let g:rg_command = 'rg --vimgrep --fixed-strings'
+let g:rg_command = 'rg --vimgrep --fixed-strings --ignore-case' 
 let g:rg_highlight = 1
 let g:terraform_align = 1
 

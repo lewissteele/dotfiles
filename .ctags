@@ -22,7 +22,6 @@
 --exclude=*.xml
 --exclude=*.yaml
 --exclude=*_compiled
---exclude=.DS_Store
 --exclude=.git
 --exclude=libraries
 --exclude=node_modules

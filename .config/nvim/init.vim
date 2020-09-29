@@ -24,7 +24,7 @@ call plug#begin()
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'moby/moby', {'rtp': '/contrib/syntax/vim/'}
   Plug 'mustache/vim-mustache-handlebars'
-  Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'pangloss/vim-javascript'
   Plug 'scrooloose/nerdcommenter'
   Plug 'scrooloose/nerdtree'

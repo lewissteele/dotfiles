@@ -1,0 +1,12 @@
+{
+    "editor.rulers": [80],
+    "files.autoSave": "afterDelay",
+    "git.autofetch": true,
+    "window.titleBarStyle": "custom",
+    "window.zoomLevel": 0,
+    "workbench.colorCustomizations": {"editorRuler.foreground": "#242526"},
+    "workbench.colorTheme": "Panda Syntax",
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.startupEditor": "none",
+}

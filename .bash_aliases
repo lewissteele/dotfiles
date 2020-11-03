@@ -1,0 +1,6 @@
+alias http='http --verify=no'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alFh'
+alias vi='nvim'
+alias vim='nvim'

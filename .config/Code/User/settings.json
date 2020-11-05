@@ -4,6 +4,7 @@
     "editor.rulers": [80],
     "files.autoSave": "afterDelay",
     "git.autofetch": true,
+    "liveshare.presence": true,
     "phpcs.executablePath": "/home/lewis/.config/composer/vendor/bin/phpcs",
     "phpcs.standard": "PSR12",
     "window.openFoldersInNewWindow": "on",

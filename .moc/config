@@ -3,4 +3,3 @@ Layout2 = directory(0,0,100%,100%):playlist(0,0,100%,100%)
 Repeat = yes
 SavePlaylist = no
 Theme = dark
-TiMidity_Config = /etc/timidity.cfg

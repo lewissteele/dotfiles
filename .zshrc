@@ -9,12 +9,12 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export EDITOR=/usr/bin/nvim
 export HISTFILESIZE=1000000000
 export HISTSIZE=1000000000
+export VISUAL=/usr/bin/nvim
 
-setopt appendhistory
-setopt incappendhistory
-setopt sharehistory
+setopt SHARE_HISTORY
 
 alias http='http --verify=no'
 alias l='ls -CF --color=auto'

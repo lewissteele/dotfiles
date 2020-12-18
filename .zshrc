@@ -12,9 +12,15 @@ fi
 export EDITOR=/usr/bin/nvim
 export HISTFILESIZE=1000000000
 export HISTSIZE=1000000000
+export STEAM_COMPAT_DATA_PATH=$HOME/proton
 export VISUAL=/usr/bin/nvim
+export WINEPREFIX=$HOME/proton
+export GOPATH=$HOME/.go
 
 setopt SHARE_HISTORY
+
+path+=("$GOPATH/bin")
+path+=("$HOME/.composer/vendor/bin")
 
 alias http='http --verify=no'
 alias l='ls -CF --color=auto'

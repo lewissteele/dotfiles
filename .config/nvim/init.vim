@@ -31,6 +31,7 @@ call plug#begin()
   Plug 'shime/vim-livedown'
   Plug 'tpope/vim-eunuch'
   Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-sleuth'
   Plug 'tveskag/nvim-blame-line'
   Plug 'vim-scripts/vim-auto-save'
   Plug 'w0rp/ale'

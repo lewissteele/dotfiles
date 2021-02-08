@@ -17,13 +17,10 @@ export VISUAL=$EDITOR
 path+=("$GOPATH/bin")
 path+=("$HOME/.composer/vendor/bin")
 
-alias cp='cp -i'
-alias df='df -h'
-alias free='free -m'
-alias http='http --verify=no'
 alias l='ls -CF --color=auto'
 alias la='ls -A --color=auto'
 alias ll='ls -alFh --color=auto'
+alias ls='ls --color=auto'
 alias sudo='sudo '
 alias vi='nvim'
 alias vim='nvim'

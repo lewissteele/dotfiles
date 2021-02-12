@@ -13,6 +13,7 @@ call plug#begin()
   Plug 'ap/vim-css-color'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'ciaranm/detectindent'
+  Plug 'dense-analysis/ale'
   Plug 'digitaltoad/vim-pug'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'hashivim/vim-terraform'
@@ -34,12 +35,12 @@ call plug#begin()
   Plug 'tpope/vim-sleuth'
   Plug 'tveskag/nvim-blame-line'
   Plug 'vim-scripts/vim-auto-save'
-  Plug 'w0rp/ale'
 call plug#end()
 
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 0
+let g:ale_linters = {'javascript':['eslint'], 'typescript':['eslint']}
 let g:ale_php_phpstan_level = 'max'
 let g:ale_sign_column_always = 1
 let g:ale_virtualtext_cursor = 1
@@ -84,9 +85,11 @@ tnoremap <esc> <c-\><c-n>
 let s:coc_extensions = [
   \'coc-css',
   \'coc-docker',
+  \'coc-eslint',
   \'coc-html',
   \'coc-json',
   \'coc-phpls',
+  \'coc-sql',
   \'coc-tsserver',
   \'coc-yaml',
 \]

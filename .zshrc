@@ -6,16 +6,28 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if [[ -e ~/.linuxbrew/share/antigen/antigen.zsh ]]; then
+  source ~/.linuxbrew/share/antigen/antigen.zsh
+
+  antigen bundle docker
+  antigen bundle docker-compose
+  antigen bundle fzf
+  antigen bundle git-auto-fetch
+  antigen bundle ripgrep
+  antigen bundle rsync
+  antigen bundle z
+  antigen bundle zsh_reload
+
+  antigen apply
+fi
+
+path+=("$HOME/.linuxbrew/bin")
+path+=("$HOME/go/bin")
 
 export EDITOR=/usr/bin/nvim
-export GOPATH=$HOME/.go
 export HISTSIZE=1000000
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
-
-path+=("$GOPATH/bin")
-path+=("$HOME/.composer/vendor/bin")
 
 alias l='ls -CF --color=auto'
 alias la='ls -A --color=auto'

@@ -29,6 +29,7 @@ export HISTSIZE=1000000
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
 
+alias j='z'
 alias l='ls -CF --color=auto'
 alias la='ls -A --color=auto'
 alias ll='ls -alFh --color=auto'
@@ -36,3 +37,7 @@ alias ls='ls --color=auto'
 alias sudo='sudo '
 alias vi='nvim'
 alias vim='nvim'
+
+if [ -z "$TMUX" ]; then
+  tmux attach || tmux
+fi

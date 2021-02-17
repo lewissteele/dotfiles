@@ -1,6 +1,5 @@
 {
   "default_options": [
-    "--body",
     "--verify=no"
   ]
 }

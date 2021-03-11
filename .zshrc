@@ -29,6 +29,7 @@ export HISTSIZE=1000000
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
 
+alias i3lock='i3lock -c 000000 -n'
 alias j='z'
 alias l='ls -CF --color=auto'
 alias la='ls -A --color=auto'

@@ -6,6 +6,8 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 if [[ -e ~/.linuxbrew/share/antigen/antigen.zsh ]]; then
   source ~/.linuxbrew/share/antigen/antigen.zsh
 
@@ -21,13 +23,20 @@ if [[ -e ~/.linuxbrew/share/antigen/antigen.zsh ]]; then
   antigen apply
 fi
 
-path+=("$HOME/.linuxbrew/bin")
-path+=("$HOME/go/bin")
-
+export ANDROID_HOME=$HOME/.android-sdk
 export EDITOR=/usr/bin/nvim
+export GDK_SCALE=1
+export GOPATH=$HOME/.go
 export HISTSIZE=1000000
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
+
+path+=("$ANDROID_HOME/emulator")
+path+=("$ANDROID_HOME/platform-tools")
+path+=("$ANDROID_HOME/tools")
+path+=("$ANDROID_HOME/tools/bin")
+path+=("$GOPATH/bin")
+path+=("$HOME/.linuxbrew/bin")
 
 alias i3lock='i3lock -c 000000 -n'
 alias j='z'

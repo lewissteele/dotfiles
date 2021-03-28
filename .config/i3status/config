@@ -1,0 +1,9 @@
+general {
+  interval = 5
+}
+
+order += "tztime local"
+
+tztime local {
+  format = "%Y-%m-%d %H:%M:%S"
+}

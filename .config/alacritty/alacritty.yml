@@ -1,6 +1,6 @@
 colors:
   primary:
-    background: '0x212121'
+    background: '0x1c1c1c'
     foreground: '0xf1f1f1'
 
   normal:
@@ -40,4 +40,4 @@ font:
     family: Ubuntu Mono
     style: Bold Italic
 
-  size: 14.0
+  size: 13

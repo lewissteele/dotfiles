@@ -28,6 +28,7 @@ export EDITOR=/usr/bin/nvim
 export GDK_SCALE=1
 export GOPATH=$HOME/.go
 export HISTSIZE=1000000
+export LESS="-SRXF"
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
 

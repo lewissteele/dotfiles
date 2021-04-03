@@ -37,6 +37,22 @@ call plug#begin()
   Plug 'vim-scripts/vim-auto-save'
 call plug#end()
 
+let s:coc_extensions = [
+  \'coc-css',
+  \'coc-docker',
+  \'coc-eslint',
+  \'coc-html',
+  \'coc-json',
+  \'coc-phpls',
+  \'coc-sql',
+  \'coc-tsserver',
+  \'coc-yaml',
+\]
+
+for extension in s:coc_extensions
+  call coc#add_extension(extension)
+endfor
+
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 0
@@ -76,33 +92,16 @@ set synmaxcol=200
 set tabstop=2
 set wildmode=longest,list,full
 
-nnoremap <c-n> :NERDTreeToggle<cr>
-nnoremap <c-p> :GFiles<cr>
-nnoremap <silent> K :call CocAction('doHover')<cr>
-nnoremap p p`]<Esc>
-tnoremap <esc> <c-\><c-n>
-
-let s:coc_extensions = [
-  \'coc-css',
-  \'coc-docker',
-  \'coc-eslint',
-  \'coc-html',
-  \'coc-json',
-  \'coc-phpls',
-  \'coc-sql',
-  \'coc-tsserver',
-  \'coc-yaml',
-\]
-
-for extension in s:coc_extensions
-  call coc#add_extension(extension)
-endfor
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> gy <Plug>(coc-type-definition)
-
-autocmd CursorHold * silent call CocActionAsync('highlight')
+nnoremap <c-n> :NERDTreeToggle<cr>
+nnoremap <c-p> :GFiles<cr>
+nnoremap <silent> K :call CocAction('doHover')<cr>
+nnoremap p p`]<Esc>
+tnoremap <esc> <c-\><c-n>
 
 colorscheme PaperColor

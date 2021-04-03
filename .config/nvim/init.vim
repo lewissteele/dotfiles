@@ -98,4 +98,11 @@ for extension in s:coc_extensions
   call coc#add_extension(extension)
 endfor
 
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gy <Plug>(coc-type-definition)
+
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
 colorscheme PaperColor

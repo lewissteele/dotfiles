@@ -35,6 +35,10 @@ exec --no-startup-id blueberry-tray
 exec --no-startup-id unclutter --timeout 3 --exclude-root --ignore-scrolling --fork
 exec --no-startup-id deja-dup-monitor
 exec --no-startup-id lxpolkit
+exec --no-startup-id xmodmap -e "pointer = 3 2 1 "
+exec --no-startup-id xset s off
+exec --no-startup-id xset -dpms
+exec --no-startup-id xset s noblank
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status

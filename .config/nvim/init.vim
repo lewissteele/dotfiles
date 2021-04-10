@@ -38,15 +38,18 @@ call plug#begin()
 call plug#end()
 
 let s:coc_extensions = [
+  \'coc-calc',
   \'coc-css',
   \'coc-docker',
   \'coc-eslint',
   \'coc-html',
   \'coc-json',
   \'coc-phpls',
+  \'coc-sh',
   \'coc-sql',
   \'coc-tsserver',
   \'coc-yaml',
+  \'coc-yank',
 \]
 
 for extension in s:coc_extensions

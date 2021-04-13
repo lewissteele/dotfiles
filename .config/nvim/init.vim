@@ -23,6 +23,7 @@ call plug#begin()
   Plug 'kamykn/spelunker.vim'
   Plug 'leafgarland/typescript-vim'
   Plug 'maxmellon/vim-jsx-pretty'
+  Plug 'mechatroner/rainbow_csv'
   Plug 'moby/moby', {'rtp': '/contrib/syntax/vim/'}
   Plug 'mustache/vim-mustache-handlebars'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}

@@ -8,8 +8,8 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-if [[ -e ~/.linuxbrew/share/antigen/antigen.zsh ]]; then
-  source ~/.linuxbrew/share/antigen/antigen.zsh
+if [[ -e /usr/share/zsh/share/antigen.zsh ]]; then
+  source /usr/share/zsh/share/antigen.zsh
 
   antigen bundle docker
   antigen bundle docker-compose
@@ -25,7 +25,7 @@ fi
 
 export ANDROID_HOME=$HOME/.android-sdk
 export EDITOR=/usr/bin/nvim
-export GDK_SCALE=1
+export GDK_SCALE=1.25
 export GOPATH=$HOME/.go
 export HISTSIZE=1000000
 export LESS="-SRXF"

@@ -25,19 +25,19 @@ colors:
 
 font:
   normal:
-    family: Ubuntu Mono
+    family: Hack
     style: Regular
 
   bold:
-    family: Ubuntu Mono
+    family: Hack
     style: Bold
 
   italic:
-    family: Ubuntu Mono
+    family: Hack
     style: Italic
 
   bold_italic:
-    family: Ubuntu Mono
+    family: Hack
     style: Bold Italic
 
-  size: 13
+  size: 11

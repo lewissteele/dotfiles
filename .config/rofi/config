@@ -1,2 +1,2 @@
-rofi.font: mono 15
+rofi.dpi: 125
 rofi.theme: /usr/share/rofi/themes/android_notification.rasi

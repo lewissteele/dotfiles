@@ -24,6 +24,7 @@ if [[ -e /usr/share/zsh/share/antigen.zsh ]]; then
 fi
 
 export ANDROID_HOME=$HOME/.android-sdk
+export DENO_INSTALL=$HOME/.deno
 export EDITOR=/usr/bin/nvim
 export GDK_SCALE=1.25
 export GOPATH=$HOME/.go
@@ -36,6 +37,7 @@ path+=("$ANDROID_HOME/emulator")
 path+=("$ANDROID_HOME/platform-tools")
 path+=("$ANDROID_HOME/tools")
 path+=("$ANDROID_HOME/tools/bin")
+path+=("$DENO_INSTALL/bin")
 path+=("$GOPATH/bin")
 path+=("$HOME/.linuxbrew/bin")
 

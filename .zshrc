@@ -24,6 +24,7 @@ if [[ -e /usr/share/zsh/share/antigen.zsh ]]; then
 fi
 
 export ANDROID_HOME=$HOME/.android-sdk
+export BROWSER=/usr/local/bin/chromium
 export DENO_INSTALL=$HOME/.deno
 export EDITOR=/usr/bin/nvim
 export GDK_SCALE=1.25

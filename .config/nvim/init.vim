@@ -17,6 +17,7 @@ call plug#begin()
   Plug 'digitaltoad/vim-pug'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'hashivim/vim-terraform'
+  Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app && yarn install'}
   Plug 'jremmen/vim-ripgrep'
   Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
   Plug 'junegunn/fzf.vim'
@@ -44,6 +45,7 @@ let s:coc_extensions = [
   \'coc-docker',
   \'coc-eslint',
   \'coc-html',
+  \'coc-jest',
   \'coc-json',
   \'coc-phpls',
   \'coc-sh',
@@ -60,7 +62,7 @@ endfor
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 0
-let g:ale_linters = {'javascript':[], 'typescript':[]}
+let g:ale_linters = {'javascript':['standard'],'typescript':['ts-standard']}
 let g:ale_php_phpstan_level = 'max'
 let g:ale_sign_column_always = 1
 let g:ale_virtualtext_cursor = 1
@@ -98,6 +100,7 @@ set wildmode=longest,list,full
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
+nmap <silent> <c-]> <Plug>(coc-definition)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)

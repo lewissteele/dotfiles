@@ -5,6 +5,7 @@
     "editor.tabSize": 2,
     "files.autoSave": "afterDelay",
     "git.autofetch": true,
+    "terminal.integrated.rendererType": "dom",
     "window.menuBarVisibility": "toggle",
     "window.openFoldersInNewWindow": "on",
     "window.zoomLevel": 0,
@@ -12,5 +13,5 @@
     "workbench.colorTheme": "Panda Syntax",
     "workbench.editor.enablePreview": false,
     "workbench.iconTheme": "city-lights-icons-vsc-light",
-    "workbench.startupEditor": "none",
+    "workbench.startupEditor": "none"
 }

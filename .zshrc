@@ -52,6 +52,8 @@ alias sudo='sudo '
 alias vi='nvim'
 alias vim='nvim'
 
-if [ -z "$TMUX" ]; then
+terminal=$(ps -p $(ps -p $$ -o ppid=) o args=)
+
+if [ -z "$TMUX" ] && [ "$terminal" = 'alacritty' ]; then
   tmux attach || tmux
 fi

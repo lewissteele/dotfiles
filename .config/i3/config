@@ -7,7 +7,6 @@ exec --no-startup-id nm-applet
 exec --no-startup-id compton -b
 exec --no-startup-id blueberry-tray
 exec --no-startup-id unclutter --timeout 3 --exclude-root --ignore-scrolling --fork
-exec --no-startup-id deja-dup-monitor
 exec --no-startup-id lxpolkit
 exec --no-startup-id xset s off
 exec --no-startup-id xset -dpms

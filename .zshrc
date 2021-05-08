@@ -31,6 +31,7 @@ export GDK_SCALE=1.25
 export GOPATH=$HOME/.go
 export HISTSIZE=1000000
 export LESS="-SRXF"
+export MESA_LOADER_DRIVER_OVERRIDE=iris
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
 
@@ -41,6 +42,7 @@ path+=("$ANDROID_HOME/tools/bin")
 path+=("$DENO_INSTALL/bin")
 path+=("$GOPATH/bin")
 path+=("$HOME/.linuxbrew/bin")
+path+=("$HOME/.yarn/bin")
 
 alias i3lock='i3lock -c 000000 -n'
 alias j='z'

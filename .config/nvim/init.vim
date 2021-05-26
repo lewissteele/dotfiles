@@ -62,7 +62,7 @@ endfor
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 0
-let g:ale_linters = {'javascript':['standard'],'typescript':['ts-standard']}
+let g:ale_linters = {'javascript':[], 'typescript':[]}
 let g:ale_php_phpstan_level = 'max'
 let g:ale_sign_column_always = 1
 let g:ale_virtualtext_cursor = 1

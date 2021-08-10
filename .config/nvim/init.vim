@@ -39,7 +39,7 @@ call plug#begin()
   Plug 'vim-scripts/vim-auto-save'
 call plug#end()
 
-let s:coc_extensions = [
+let g:coc_global_extensions = [
   \'coc-calc',
   \'coc-css',
   \'coc-docker',
@@ -54,10 +54,6 @@ let s:coc_extensions = [
   \'coc-yaml',
   \'coc-yank',
 \]
-
-for extension in s:coc_extensions
-  call coc#add_extension(extension)
-endfor
 
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_insert_leave = 1

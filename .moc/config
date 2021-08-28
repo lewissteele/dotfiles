@@ -2,4 +2,5 @@ Layout1 = directory(0,0,100%,100%):playlist(0,0,100%,100%)
 Layout2 = directory(0,0,100%,100%):playlist(0,0,100%,100%)
 Repeat = yes
 SavePlaylist = no
+ShowTime = yes
 Theme = dark

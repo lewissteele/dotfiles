@@ -2,10 +2,6 @@ if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
   source /usr/share/zsh/manjaro-zsh-config
 fi
 
-if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
-  source /usr/share/zsh/manjaro-zsh-prompt
-fi
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 if [[ -e /usr/share/zsh/share/antigen.zsh ]]; then
@@ -18,6 +14,7 @@ if [[ -e /usr/share/zsh/share/antigen.zsh ]]; then
   antigen bundle ripgrep
   antigen bundle rsync
   antigen bundle z
+  antigen bundle zsh-users/zsh-autosuggestions
   antigen bundle zsh_reload
 
   antigen apply
@@ -31,7 +28,7 @@ export GDK_SCALE=1.25
 export GOPATH=$HOME/.go
 export HISTSIZE=1000000
 export LESS="-SRXF"
-export MESA_LOADER_DRIVER_OVERRIDE=iris
+export PS1="%1~ "
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
 

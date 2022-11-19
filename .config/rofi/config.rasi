@@ -1,4 +1,5 @@
 configuration {
-  dpi: 125;
-  theme: "android_notification";
+  dpi: 110;
 }
+
+@theme "android_notification"

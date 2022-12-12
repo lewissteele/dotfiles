@@ -4,7 +4,7 @@ font pango:monospace 8
 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
-exec --no-startup-id picom -b --experimental-backend
+exec --no-startup-id picom -b
 exec --no-startup-id blueberry-tray
 exec --no-startup-id unclutter --timeout 3 --exclude-root --ignore-scrolling --fork
 exec --no-startup-id lxpolkit

@@ -7,6 +7,7 @@ fi
 if [[ -e /usr/share/zsh/share/antigen.zsh ]]; then
   source /usr/share/zsh/share/antigen.zsh
 
+  antigen bundle arzzen/calc.plugin.zsh
   antigen bundle docker
   antigen bundle docker-compose
   antigen bundle fzf
@@ -31,6 +32,8 @@ export LESS="-SRXF"
 export PS1="%1~ "
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
+
+export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"
 
 path+=("$ANDROID_HOME/emulator")
 path+=("$ANDROID_HOME/platform-tools")

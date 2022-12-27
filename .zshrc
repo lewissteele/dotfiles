@@ -41,6 +41,7 @@ path+=("$ANDROID_HOME/tools")
 path+=("$ANDROID_HOME/tools/bin")
 path+=("$DENO_INSTALL/bin")
 path+=("$GOPATH/bin")
+path+=("$HOME/.config/composer/vendor/bin")
 path+=("$HOME/.linuxbrew/bin")
 path+=("$HOME/.yarn/bin")
 

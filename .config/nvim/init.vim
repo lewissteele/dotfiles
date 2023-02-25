@@ -89,6 +89,7 @@ set noswapfile
 set nowrap
 set number
 set shiftwidth=2
+set signcolumn=yes
 set smartindent
 set spelllang=en_gb
 set synmaxcol=200

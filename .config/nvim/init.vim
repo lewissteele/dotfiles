@@ -56,6 +56,7 @@ let g:coc_global_extensions = [
   \'coc-yank',
 \]
 
+let g:PHP_noArrowMatching = 1
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 0
@@ -88,12 +89,12 @@ set incsearch
 set noswapfile
 set nowrap
 set number
-set shiftwidth=2
+set shiftwidth=4
 set signcolumn=yes
 set smartindent
 set spelllang=en_gb
 set synmaxcol=200
-set tabstop=2
+set tabstop=4
 set wildmode=longest,list,full
 
 autocmd CursorHold * silent call CocActionAsync('highlight')

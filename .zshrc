@@ -39,6 +39,7 @@ fi
 export BROWSER=/usr/local/bin/chromium
 export EDITOR=/usr/bin/nvim
 export GOPATH=$HOME/.go
+export GPG_TTY=$(tty)
 export HISTFILE=~/.zhistory
 export HISTSIZE=1000000
 export LESS="-SRXF"

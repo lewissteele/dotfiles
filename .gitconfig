@@ -1,0 +1,13 @@
+[user]
+  name = Lewis Steele
+  email = lewissteele254@gmail.com
+[core]
+  editor = nvim
+[commit]
+  gpgsign = true
+[pull]
+  rebase = false
+[push]
+  autoSetupRemote = true
+[init]
+  defaultBranch = main

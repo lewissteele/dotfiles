@@ -36,7 +36,7 @@ if [[ -e /usr/share/zsh/share/antigen.zsh ]]; then
   antigen apply
 fi
 
-export BROWSER=/usr/local/bin/chromium
+export BROWSER=/usr/share/google-chrome
 export EDITOR=/usr/bin/nvim
 export GPG_TTY=$(tty)
 export HISTFILE=~/.zhistory
@@ -58,6 +58,8 @@ alias vim='nvim'
 
 terminal=$(ps -p $(ps -p $$ -o ppid=) o args=)
 
-if [ -z "$TMUX" ] && [ "$terminal" = 'alacritty' ]; then
+if [ -z "$TMUX" ] && [ "$terminal" = '/usr/bin/alacritty' ]; then
   tmux attach || tmux
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

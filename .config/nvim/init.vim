@@ -12,7 +12,6 @@ call plug#begin()
   Plug 'airblade/vim-gitgutter'
   Plug 'ap/vim-css-color'
   Plug 'christoomey/vim-tmux-navigator'
-  Plug 'ciaranm/detectindent'
   Plug 'dense-analysis/ale'
   Plug 'digitaltoad/vim-pug'
   Plug 'editorconfig/editorconfig-vim'
@@ -21,6 +20,7 @@ call plug#begin()
   Plug 'jremmen/vim-ripgrep'
   Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
   Plug 'junegunn/fzf.vim'
+  Plug 'jwalton512/vim-blade'
   Plug 'kamykn/spelunker.vim'
   Plug 'leafgarland/typescript-vim'
   Plug 'maxmellon/vim-jsx-pretty'

@@ -40,6 +40,7 @@ call plug#begin()
 call plug#end()
 
 let g:coc_global_extensions = [
+  \'@yaegassy/coc-tailwindcss3',
   \'coc-calc',
   \'coc-css',
   \'coc-docker',

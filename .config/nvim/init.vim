@@ -5,7 +5,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin()
-  Plug 'Lokaltog/vim-monotone'
   Plug 'NLKNguyen/papercolor-theme'
   Plug 'StanAngeloff/php.vim'
   Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -22,13 +21,10 @@ call plug#begin()
   Plug 'junegunn/fzf.vim'
   Plug 'jwalton512/vim-blade'
   Plug 'kamykn/spelunker.vim'
-  Plug 'leafgarland/typescript-vim'
-  Plug 'maxmellon/vim-jsx-pretty'
   Plug 'mechatroner/rainbow_csv'
   Plug 'moby/moby', {'rtp': '/contrib/syntax/vim/'}
   Plug 'mustache/vim-mustache-handlebars'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'pangloss/vim-javascript'
   Plug 'scrooloose/nerdcommenter'
   Plug 'scrooloose/nerdtree'
   Plug 'shime/vim-livedown'

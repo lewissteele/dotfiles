@@ -11,8 +11,6 @@ call plug#begin()
   Plug 'airblade/vim-gitgutter'
   Plug 'ap/vim-css-color'
   Plug 'christoomey/vim-tmux-navigator'
-  Plug 'dense-analysis/ale'
-  Plug 'digitaltoad/vim-pug'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'hashivim/vim-terraform'
   Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app && yarn install'}
@@ -37,7 +35,6 @@ call plug#end()
 
 let g:coc_global_extensions = [
   \'@yaegassy/coc-tailwindcss3',
-  \'coc-calc',
   \'coc-css',
   \'coc-docker',
   \'coc-eslint',
@@ -50,17 +47,9 @@ let g:coc_global_extensions = [
   \'coc-sql',
   \'coc-tsserver',
   \'coc-yaml',
-  \'coc-yank',
 \]
 
 let g:PHP_noArrowMatching = 1
-let g:ale_lint_on_enter = 0
-let g:ale_lint_on_insert_leave = 1
-let g:ale_lint_on_text_changed = 0
-let g:ale_linters = {'javascript':[], 'typescript':[]}
-let g:ale_php_phpstan_level = 'max'
-let g:ale_sign_column_always = 1
-let g:ale_virtualtext_cursor = 1
 let g:auto_save = 1
 let g:auto_save_in_insert_mode = 0
 let g:javascript_plugin_jsdoc = 1

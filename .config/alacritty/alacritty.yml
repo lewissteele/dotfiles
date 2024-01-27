@@ -40,4 +40,6 @@ font:
     family: Hack
     style: Bold Italic
 
-  size: 11.5
+  size: 16
+mouse:
+  hide_when_typing: true

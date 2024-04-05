@@ -23,7 +23,7 @@ background = "0x1c1c1c"
 foreground = "0xf1f1f1"
 
 [font]
-size = 14
+size = 13
 
 [font.bold]
 family = "Hack"

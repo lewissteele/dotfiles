@@ -9,6 +9,7 @@ call plug#begin()
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'airblade/vim-gitgutter'
   Plug 'ap/vim-css-color'
+  Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'hashivim/vim-terraform'
@@ -69,6 +70,7 @@ set smartindent
 set spelllang=en_gb
 set synmaxcol=200
 set tabstop=4
+set termguicolors
 set wildmode=longest,list,full
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
@@ -84,3 +86,4 @@ nnoremap <silent> K :call CocAction('doHover')<cr>
 nnoremap p p`]<Esc>
 tnoremap <esc> <c-\><c-n>
 
+colorscheme catppuccin-mocha

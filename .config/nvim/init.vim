@@ -13,18 +13,15 @@ call plug#begin()
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'hashivim/vim-terraform'
-  Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app && yarn install'}
   Plug 'jremmen/vim-ripgrep'
   Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
   Plug 'junegunn/fzf.vim'
   Plug 'jwalton512/vim-blade'
   Plug 'kamykn/spelunker.vim'
   Plug 'mechatroner/rainbow_csv'
-  Plug 'moby/moby', {'rtp': '/contrib/syntax/vim/'}
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'scrooloose/nerdcommenter'
   Plug 'scrooloose/nerdtree'
-  Plug 'shime/vim-livedown'
   Plug 'tpope/vim-eunuch'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-sleuth'

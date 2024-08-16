@@ -5,7 +5,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin()
-  Plug 'NLKNguyen/papercolor-theme'
   Plug 'StanAngeloff/php.vim'
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'airblade/vim-gitgutter'
@@ -16,7 +15,6 @@ call plug#begin()
   Plug 'jremmen/vim-ripgrep'
   Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
   Plug 'junegunn/fzf.vim'
-  Plug 'jwalton512/vim-blade'
   Plug 'kamykn/spelunker.vim'
   Plug 'mechatroner/rainbow_csv'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -30,14 +28,13 @@ call plug#begin()
 call plug#end()
 
 let g:coc_global_extensions = [
-  \'@yaegassy/coc-tailwindcss3',
-  \'coc-css',
   \'coc-docker',
   \'coc-html',
   \'coc-json',
   \'coc-phpls',
   \'coc-sh',
   \'coc-sql',
+  \'coc-tsserver',
   \'coc-yaml',
 \]
 
@@ -87,4 +84,3 @@ nnoremap <silent> K :call CocAction('doHover')<cr>
 nnoremap p p`]<Esc>
 tnoremap <esc> <c-\><c-n>
 
-colorscheme PaperColor

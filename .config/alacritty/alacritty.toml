@@ -40,3 +40,6 @@ style = "Italic"
 [font.normal]
 family = "Hack"
 style = "Regular"
+
+[mouse]
+hide_when_typing = true

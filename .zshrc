@@ -43,7 +43,6 @@ export GPG_TTY=$(tty)
 export HISTFILE=~/.zhistory
 export HISTSIZE=1000000
 export LESS="-SRXF"
-export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"
 export PS1="%1~ "
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR

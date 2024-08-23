@@ -1,14 +1,18 @@
-setopt appendhistory
-setopt autocd
-setopt extendedglob
-setopt histignorealldups
-setopt histignorespace
-setopt inc_append_history
-setopt nobeep
-setopt nocaseglob
-setopt nocheckjobs
-setopt numericglobsort
-setopt rcexpandparam
+setopt APPEND_HISTORY
+setopt AUTO_CD
+setopt EXTENDED_GLOB
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_SAVE_NO_DUPS
+setopt INC_APPEND_HISTORY
+setopt NO_BEEP
+setopt NO_CASE_GLOB
+setopt NO_CHECK_JOBS
+setopt NUMERIC_GLOB_SORT
+setopt RC_EXPAND_PARAM
 
 zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' cache-path ~/.zsh/cache
@@ -36,7 +40,7 @@ if [[ -e /usr/share/zsh/share/antigen.zsh ]]; then
   antigen apply
 fi
 
-export BROWSER=/usr/share/google-chrome
+export BROWSER=/usr/bin/firefox
 export EDITOR=/usr/bin/nvim
 export GOPATH=$HOME/.go
 export GPG_TTY=$(tty)

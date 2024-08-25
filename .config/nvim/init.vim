@@ -11,7 +11,6 @@ call plug#begin()
   Plug 'ap/vim-css-color'
   Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
   Plug 'christoomey/vim-tmux-navigator'
-  Plug 'editorconfig/editorconfig-vim'
   Plug 'hashivim/vim-terraform'
   Plug 'jremmen/vim-ripgrep'
   Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
@@ -64,12 +63,12 @@ set incsearch
 set noswapfile
 set nowrap
 set number
-set shiftwidth=4
+set shiftwidth=2
 set signcolumn=yes
 set smartindent
 set spelllang=en_gb
 set synmaxcol=200
-set tabstop=4
+set tabstop=2
 set termguicolors
 set wildmode=longest,list,full
 

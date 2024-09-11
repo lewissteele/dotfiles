@@ -9,6 +9,7 @@
   rebase = false
 [push]
   autoSetupRemote = true
+  followTags = true
 [init]
   defaultBranch = main
 [tag]

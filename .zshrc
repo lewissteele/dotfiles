@@ -47,12 +47,14 @@ export GPG_TTY=$(tty)
 export HISTFILE=~/.zhistory
 export HISTSIZE=1000000
 export LESS="-SRXF"
+export NPM_CONFIG_PREFIX="$HOME/.local"
 export PS1="%1~ "
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
 
 path+=("$GOPATH/bin")
 path+=("$HOME/.config/composer/vendor/bin")
+path+=("$HOME/.local/bin")
 
 alias grep='grep --colour=auto'
 alias ls='ls --color=auto'

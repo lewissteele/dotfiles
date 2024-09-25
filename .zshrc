@@ -24,18 +24,9 @@ zstyle ':completion:*' use-cache on
 if [[ -e /usr/share/zsh/share/antigen.zsh ]]; then
   source /usr/share/zsh/share/antigen.zsh
 
-  antigen bundle docker
-  antigen bundle docker-compose
-  antigen bundle fzf
-  antigen bundle git-auto-fetch
-  antigen bundle ripgrep
-  antigen bundle rsync
-  antigen bundle z
   antigen bundle zsh-users/zsh-autosuggestions
+  antigen bundle zsh-users/zsh-completions
   antigen bundle zsh-users/zsh-syntax-highlighting
-  antigen bundle zsh_reload
-
-  antigen bundle arzzen/calc.plugin.zsh
 
   antigen apply
 fi
@@ -69,4 +60,4 @@ if [ -z "$TMUX" ] && [ "$terminal" = '/usr/bin/alacritty' ]; then
   tmux attach || tmux
 fi
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)

@@ -30,6 +30,7 @@ call plug#end()
 
 let g:coc_global_extensions = [
   \'coc-docker',
+  \'coc-go',
   \'coc-html',
   \'coc-json',
   \'coc-phpls',

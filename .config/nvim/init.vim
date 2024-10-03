@@ -10,6 +10,7 @@ call plug#begin()
   Plug 'airblade/vim-gitgutter'
   Plug 'ap/vim-css-color'
   Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+  Plug 'charlespascoe/vim-go-syntax'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'hashivim/vim-terraform'
   Plug 'jremmen/vim-ripgrep'

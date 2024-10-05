@@ -48,8 +48,7 @@ path+=("$HOME/.config/composer/vendor/bin")
 path+=("$HOME/.local/bin")
 
 alias grep='grep --colour=auto'
-alias ls='ls --color=auto'
-alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+alias ls='ls --color=auto --human-readable'
 alias sudo='sudo '
 alias vi='nvim'
 alias vim='nvim'

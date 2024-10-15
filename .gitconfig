@@ -3,6 +3,7 @@
   email = lewis.steele@posteo.net
 [core]
   editor = nvim
+  pager = less --tabs 2
 [commit]
   gpgsign = true
 [pull]

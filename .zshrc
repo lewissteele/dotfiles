@@ -48,6 +48,7 @@ path+=("$HOME/.config/composer/vendor/bin")
 path+=("$HOME/.local/bin")
 
 alias grep='grep --colour=auto'
+alias less='less --tab 2'
 alias ls='ls --color=auto --human-readable'
 alias sudo='sudo '
 alias vi='nvim'

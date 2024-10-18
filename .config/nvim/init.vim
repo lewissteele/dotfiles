@@ -8,7 +8,6 @@ call plug#begin()
   Plug 'StanAngeloff/php.vim'
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'airblade/vim-gitgutter'
-  Plug 'ap/vim-css-color'
   Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
   Plug 'charlespascoe/vim-go-syntax'
   Plug 'christoomey/vim-tmux-navigator'
@@ -32,11 +31,11 @@ call plug#end()
 let g:coc_global_extensions = [
   \'coc-docker',
   \'coc-go',
-  \'coc-html',
   \'coc-json',
   \'coc-phpls',
   \'coc-sh',
   \'coc-sql',
+  \'coc-toml',
   \'coc-tsserver',
   \'coc-yaml',
 \]

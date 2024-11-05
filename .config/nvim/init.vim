@@ -19,7 +19,6 @@ call plug#begin()
   Plug 'mechatroner/rainbow_csv'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'pangloss/vim-javascript'
-  Plug 'scrooloose/nerdcommenter'
   Plug 'scrooloose/nerdtree'
   Plug 'tpope/vim-eunuch'
   Plug 'tpope/vim-fugitive'

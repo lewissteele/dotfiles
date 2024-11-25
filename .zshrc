@@ -21,8 +21,8 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' rehash true
 zstyle ':completion:*' use-cache on
 
-if [[ -e /usr/share/zsh/share/antigen.zsh ]]; then
-  source /usr/share/zsh/share/antigen.zsh
+if [[ -e /opt/homebrew/share/antigen/antigen.zsh ]]; then
+  source /opt/homebrew/share/antigen/antigen.zsh
 
   antigen bundle zsh-users/zsh-autosuggestions
   antigen bundle zsh-users/zsh-completions
@@ -31,10 +31,17 @@ if [[ -e /usr/share/zsh/share/antigen.zsh ]]; then
   antigen apply
 fi
 
-export BROWSER=/usr/bin/firefox
-export EDITOR=/usr/bin/nvim
+HERD="$HOME/Library/Application Support/Herd/config/php"
+
+export EDITOR=/opt/homebrew/bin/nvim
 export GOPATH=$HOME/.go
 export GPG_TTY=$(tty)
+export HERD_PHP_74_INI_SCAN_DIR="$HERD/74/"
+export HERD_PHP_80_INI_SCAN_DIR="$HERD/80/"
+export HERD_PHP_81_INI_SCAN_DIR="$HERD/81/"
+export HERD_PHP_82_INI_SCAN_DIR="$HERD/82/"
+export HERD_PHP_83_INI_SCAN_DIR="$HERD/83/"
+export HERD_PHP_84_INI_SCAN_DIR="$HERD/84/"
 export HISTFILE=~/.zhistory
 export HISTSIZE=1000000
 export LESS="-SRXF --tabs 2"
@@ -43,9 +50,9 @@ export PS1="%1~ "
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
 
+path+=("$HOME/.composer/vendor/bin")
+path+=("$HOME/Library/Application Support/Herd/bin/")
 path+=("$GOPATH/bin")
-path+=("$HOME/.config/composer/vendor/bin")
-path+=("$HOME/.local/bin")
 
 alias grep='grep --colour=auto'
 alias ls='ls --color=auto --human-readable'
@@ -53,10 +60,5 @@ alias sudo='sudo '
 alias vi='nvim'
 alias vim='nvim'
 
-terminal=$(ps -p $(ps -p $$ -o ppid=) o args=)
-
-if [ -z "$TMUX" ] && [ "$terminal" = '/usr/bin/alacritty' ]; then
-  tmux attach || tmux
-fi
-
 source <(fzf --zsh)
+

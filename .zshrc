@@ -55,7 +55,7 @@ path+=("$HOME/Library/Application Support/Herd/bin/")
 path+=("$GOPATH/bin")
 
 alias grep='grep --colour=auto'
-alias ls='ls -h --color=auto'
+alias ls='ls -Ah --color=auto'
 alias sudo='sudo '
 alias vi='nvim'
 alias vim='nvim'

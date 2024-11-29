@@ -32,6 +32,7 @@ let g:coc_global_extensions = [
   \'coc-go',
   \'coc-json',
   \'coc-phpls',
+  \'coc-prettier',
   \'coc-sh',
   \'coc-sql',
   \'coc-toml',

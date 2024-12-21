@@ -43,6 +43,7 @@ let g:coc_global_extensions = [
 let g:PHP_noArrowMatching = 1
 let g:auto_save = 1
 let g:auto_save_in_insert_mode = 0
+let g:auto_save_silent = 1
 let g:rg_command = 'rg --vimgrep --fixed-strings --ignore-case' 
 let g:rg_highlight = 1
 let g:terraform_align = 1

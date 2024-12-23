@@ -13,7 +13,7 @@ call plug#begin()
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'hashivim/vim-terraform'
   Plug 'jremmen/vim-ripgrep'
-  Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
+  Plug 'junegunn/fzf',
   Plug 'junegunn/fzf.vim'
   Plug 'kamykn/spelunker.vim'
   Plug 'mechatroner/rainbow_csv'

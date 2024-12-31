@@ -1,5 +1,6 @@
 background = 1e1e2e
 cursor-color = f5e0dc
+cursor-style-blink = false
 font-family = Hack
 font-size = 18
 font-thicken = true
@@ -23,3 +24,4 @@ palette = 8=#585b70
 palette = 9=#f38ba8
 selection-background = 353749
 selection-foreground = cdd6f4
+shell-integration-features = no-cursor

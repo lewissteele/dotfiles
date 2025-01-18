@@ -50,9 +50,10 @@ export PS1="%1~ "
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
 
-path+=("$HOME/.composer/vendor/bin")
-path+=("$HOME/Library/Application Support/Herd/bin/")
 path+=("$GOPATH/bin")
+path+=("$HOME/.composer/vendor/bin")
+path+=("$HOME/.deno/bin")
+path+=("$HOME/Library/Application Support/Herd/bin/")
 
 alias grep='grep --colour=auto'
 alias ls='ls -Ah --color=auto'

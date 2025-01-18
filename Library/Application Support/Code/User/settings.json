@@ -1,0 +1,13 @@
+{
+    "editor.fontSize": 14,
+    "editor.minimap.enabled": false,
+    "extensions.ignoreRecommendations": true,
+    "files.autoSave": "afterDelay",
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.fontSize": 14,
+    "window.openFoldersInNewWindow": "on",
+    "window.zoomLevel": 1,
+    "workbench.editor.enablePreview": false,
+    "workbench.settings.editor": "json",
+    "workbench.startupEditor": "none",
+}

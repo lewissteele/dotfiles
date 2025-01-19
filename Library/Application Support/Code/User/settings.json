@@ -3,6 +3,7 @@
     "editor.minimap.enabled": false,
     "extensions.ignoreRecommendations": true,
     "files.autoSave": "afterDelay",
+    "git.autofetch": true,
     "git.enableCommitSigning": true,
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.fontSize": 14,

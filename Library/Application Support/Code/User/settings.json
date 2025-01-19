@@ -1,6 +1,7 @@
 {
     "editor.fontSize": 14,
     "editor.minimap.enabled": false,
+    "explorer.confirmDelete": false,
     "extensions.ignoreRecommendations": true,
     "files.autoSave": "afterDelay",
     "git.autofetch": true,
@@ -10,6 +11,8 @@
     "window.openFoldersInNewWindow": "on",
     "window.zoomLevel": 1,
     "workbench.editor.enablePreview": false,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 6,
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "none",
 }

@@ -1,4 +1,7 @@
 {
+  "features": {
+    "edit_prediction_provider": "none"
+  },
   "telemetry": {
     "metrics": false,
     "diagnostics": false

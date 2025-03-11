@@ -1,4 +1,5 @@
 {
+	"chat.commandCenter.enabled": false,
 	"editor.fontSize": 14,
 	"editor.minimap.enabled": false,
 	"editor.tabSize": 2,
@@ -13,7 +14,7 @@
 	"workbench.editor.enablePreview": false,
 	"workbench.editor.limit.enabled": true,
 	"workbench.editor.limit.value": 6,
+	"workbench.panel.showLabels": false,
 	"workbench.settings.editor": "json",
 	"workbench.startupEditor": "none",
-	"chat.commandCenter.enabled": false,
 }

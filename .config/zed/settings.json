@@ -11,7 +11,10 @@
       "milliseconds": 1000
     }
   },
+  "buffer_font_family": "Hack",
   "buffer_font_size": 16,
+  "ui_font_family": "Hack",
   "ui_font_size": 18,
-  "vim_mode": true
+  "vim_mode": true,
+  "max_tabs": 6
 }

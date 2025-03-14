@@ -11,10 +11,16 @@
       "milliseconds": 1000
     }
   },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
   "buffer_font_family": "Hack",
   "buffer_font_size": 16,
+  "max_tabs": 6,
+  "tab_size": 2,
   "ui_font_family": "Hack",
   "ui_font_size": 18,
-  "vim_mode": true,
-  "max_tabs": 6
+  "vim_mode": true
 }

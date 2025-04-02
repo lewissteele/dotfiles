@@ -29,7 +29,6 @@ call plug#end()
 
 let g:coc_global_extensions = [
   \'coc-docker',
-  \'coc-go',
   \'coc-json',
   \'coc-phpls',
   \'coc-prettier',

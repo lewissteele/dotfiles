@@ -1,3 +1,4 @@
+auto-update = download
 background = 1e1e2e
 cursor-color = f5e0dc
 cursor-style-blink = false
@@ -5,7 +6,7 @@ font-family = Hack
 font-size = 18
 font-thicken = true
 foreground = cdd6f4
-mouse-hide-while-typing
+mouse-hide-while-typing = true
 palette = 0=#45475a
 palette = 10=#a6e3a1
 palette = 11=#f9e2af

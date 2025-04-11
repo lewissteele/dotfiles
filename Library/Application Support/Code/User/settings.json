@@ -12,6 +12,7 @@
 	"terminal.integrated.fontSize": 14,
 	"terminal.integrated.tabs.enabled": false,
 	"window.zoomLevel": 1,
+	"workbench.editor.editorActionsLocation": "hidden",
 	"workbench.editor.enablePreview": false,
 	"workbench.editor.limit.enabled": true,
 	"workbench.editor.limit.value": 6,

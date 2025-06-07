@@ -53,6 +53,7 @@ export VISUAL=$EDITOR
 path+=("$GOPATH/bin")
 path+=("$HOME/.composer/vendor/bin")
 path+=("$HOME/.deno/bin")
+path+=("$HOME/.filen-cli/bin")
 path+=("$HOME/Library/Application Support/Herd/bin/")
 
 alias grep='grep --colour=auto'

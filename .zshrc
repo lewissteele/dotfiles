@@ -21,46 +21,31 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' rehash true
 zstyle ':completion:*' use-cache on
 
-if [[ -e /opt/homebrew/share/antigen/antigen.zsh ]]; then
-  source /opt/homebrew/share/antigen/antigen.zsh
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/zsh-antigen/antigen.zsh
 
-  antigen bundle zsh-users/zsh-autosuggestions
-  antigen bundle zsh-users/zsh-completions
-  antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-syntax-highlighting
 
-  antigen apply
-fi
+antigen apply
 
-HERD="$HOME/Library/Application Support/Herd/config/php"
-
-export EDITOR=/opt/homebrew/bin/nvim
+export EDITOR=/usr/local/bin/nvim
 export GOPATH=$HOME/.go
 export GPG_TTY=$(tty)
-export HERD_PHP_74_INI_SCAN_DIR="$HERD/74/"
-export HERD_PHP_80_INI_SCAN_DIR="$HERD/80/"
-export HERD_PHP_81_INI_SCAN_DIR="$HERD/81/"
-export HERD_PHP_82_INI_SCAN_DIR="$HERD/82/"
-export HERD_PHP_83_INI_SCAN_DIR="$HERD/83/"
-export HERD_PHP_84_INI_SCAN_DIR="$HERD/84/"
 export HISTFILE=~/.zhistory
 export HISTSIZE=1000000
 export LESS="-SRXF --tabs 2"
-export NPM_CONFIG_PREFIX="$HOME/.local"
-export PS1="%1~ "
+export PHP_INI_SCAN_DIR="$HOME/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+export PROMPT="%B%1~ %b"
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
 
-path+=("$GOPATH/bin")
-path+=("$HOME/.composer/vendor/bin")
+path+=("$HOME/.config/herd-lite/bin")
 path+=("$HOME/.deno/bin")
-path+=("$HOME/.filen-cli/bin")
-path+=("$HOME/Library/Application Support/Herd/bin/")
 
 alias grep='grep --colour=auto'
-alias ls='ls -Ah --color=auto'
+alias ls='ls -h --color=auto'
 alias sudo='sudo '
 alias vi='nvim'
 alias vim='nvim'
-
-source <(fzf --zsh)
-

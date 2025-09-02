@@ -28,6 +28,7 @@ call plug#begin()
 call plug#end()
 
 let g:coc_global_extensions = [
+  \'coc-deno',
   \'coc-docker',
   \'coc-json',
   \'coc-phpls',

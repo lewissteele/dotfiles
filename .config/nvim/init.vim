@@ -37,7 +37,6 @@ let g:coc_global_extensions = [
   \'coc-sh',
   \'coc-sql',
   \'coc-toml',
-  \'coc-tsserver',
   \'coc-yaml',
 \]
 

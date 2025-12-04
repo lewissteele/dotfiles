@@ -1,4 +1,4 @@
-auto-update = download
+auto-update = off
 background = 1e1e2e
 cursor-color = f5e0dc
 cursor-style-blink = false

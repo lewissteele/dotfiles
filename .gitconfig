@@ -1,6 +1,6 @@
 [user]
   name = Lewis Steele
-  email = lewis.steele@posteo.net
+  email = lewis.steele@me.com
 [core]
   editor = nvim
   pager = less --tabs 2

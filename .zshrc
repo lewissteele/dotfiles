@@ -21,31 +21,45 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' rehash true
 zstyle ':completion:*' use-cache on
 
-source /usr/share/doc/fzf/examples/key-bindings.zsh
-source /usr/share/zsh-antigen/antigen.zsh
+if [[ -e /opt/homebrew/share/antigen/antigen.zsh ]]; then
+  source /opt/homebrew/share/antigen/antigen.zsh
 
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-syntax-highlighting
+  antigen bundle zsh-users/zsh-autosuggestions
+  antigen bundle zsh-users/zsh-completions
+  antigen bundle zsh-users/zsh-syntax-highlighting
 
-antigen apply
+  antigen apply
+fi
 
-export EDITOR=/usr/local/bin/nvim
+export EDITOR=/opt/homebrew/bin/nvim
 export GOPATH=$HOME/.go
 export GPG_TTY=$(tty)
+export HERD_PHP_74_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/Herd/config/php/74/"
+export HERD_PHP_80_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/Herd/config/php/80/"
+export HERD_PHP_81_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/Herd/config/php/81/"
+export HERD_PHP_82_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/Herd/config/php/82/"
+export HERD_PHP_83_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/Herd/config/php/83/"
+export HERD_PHP_84_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/Herd/config/php/84/"
+export HERD_PHP_85_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/Herd/config/php/85/"
 export HISTFILE=~/.zhistory
 export HISTSIZE=1000000
 export LESS="-SRXF --tabs 2"
-export PHP_INI_SCAN_DIR="$HOME/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+export NPM_CONFIG_PREFIX="$HOME/.local"
 export PROMPT="%B%1~ %b"
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
 
-path+=("$HOME/.config/herd-lite/bin")
+path+=("$GOPATH/bin")
+path+=("$HOME/.composer/vendor/bin")
 path+=("$HOME/.deno/bin")
+path+=("$HOME/.filen-cli/bin")
+path+=("$HOME/Library/Application Support/Herd/bin/")
 
 alias grep='grep --colour=auto'
 alias ls='ls -h --color=auto'
 alias sudo='sudo '
 alias vi='nvim'
 alias vim='nvim'
+
+source <(fzf --zsh)
+

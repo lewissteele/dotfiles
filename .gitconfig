@@ -6,8 +6,6 @@
   pager = less --tabs 2
 [commit]
   gpgsign = true
-[pull]
-  rebase = false
 [push]
   autoSetupRemote = true
   followTags = true
@@ -15,3 +13,5 @@
   defaultBranch = main
 [tag]
   gpgSign = true
+[gpg]
+  program = /opt/homebrew/bin/gpg

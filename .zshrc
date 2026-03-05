@@ -44,7 +44,7 @@ export HERD_PHP_85_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/
 export HISTFILE=~/.zhistory
 export HISTSIZE=1000000
 export LESS="-SRXF --tabs 2"
-export NPM_CONFIG_PREFIX="$HOME/.local"
+export NPM_CONFIG_PREFIX="$HOME/.npm"
 export PROMPT="%B%1~ %b"
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
@@ -53,6 +53,7 @@ path+=("$GOPATH/bin")
 path+=("$HOME/.composer/vendor/bin")
 path+=("$HOME/.deno/bin")
 path+=("$HOME/Library/Application Support/Herd/bin/")
+path+=("$NPM_CONFIG_PREFIX/bin")
 
 alias grep='grep --colour=auto'
 alias ls='ls -h --color=auto'

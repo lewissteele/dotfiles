@@ -51,8 +51,7 @@ export VISUAL=$EDITOR
 
 path+=("$GOPATH/bin")
 path+=("$HOME/.composer/vendor/bin")
-path+=("$HOME/.deno/bin")
-path+=("$HOME/Library/Application Support/Herd/bin/")
+path+=("$HOME/Library/Application Support/Herd/bin")
 path+=("$NPM_CONFIG_PREFIX/bin")
 
 alias grep='grep --colour=auto'

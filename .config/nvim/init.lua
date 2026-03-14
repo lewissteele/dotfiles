@@ -39,6 +39,10 @@ require("lazy").setup({
         vim.cmd.colorscheme("catppuccin-mocha")
       end,
     },
+    {
+      "lewis6991/gitsigns.nvim",
+      config = true,
+    },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.

@@ -22,6 +22,11 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 vim.opt.clipboard = "unnamedplus"
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 2
+vim.opt.spell = true
+vim.opt.spelllang = "en_gb"
+vim.opt.tabstop = 2
 
 -- Setup lazy.nvim
 require("lazy").setup({

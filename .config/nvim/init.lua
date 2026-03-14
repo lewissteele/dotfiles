@@ -56,11 +56,24 @@ require("lazy").setup({
         vim.keymap.set("n", "<leader>fb", builtin.buffers)
         vim.keymap.set("n", "<leader>fh", builtin.help_tags)
       end,
-    }
+    },
+    {
+      "nvim-tree/nvim-tree.lua",
+      lazy = false,
+      dependencies = { "nvim-tree/nvim-web-devicons" },
+      config = function()
+        require("nvim-tree").setup()
+        vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+      end,
+    },
+    {
+      "okuuva/auto-save.nvim",
+      version = '^1.0.0',
+      config = true,
+    },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "habamax" } },
   -- automatically check for plugin updates
   checker = { enabled = true, notify = false },
 })

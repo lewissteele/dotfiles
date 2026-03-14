@@ -71,9 +71,32 @@ require("lazy").setup({
       version = '^1.0.0',
       config = true,
     },
+    {
+      "williamboman/mason.nvim",
+      config = true,
+    },
+    {
+      "saghen/blink.cmp",
+      version = "1.*",
+      config = true,
+    },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
   -- automatically check for plugin updates
   checker = { enabled = true, notify = false },
 })
+
+vim.lsp.config("gopls", {
+  cmd = { "gopls" },
+  filetypes = { "go", "gomod", "gowork", "gotmpl" },
+  root_markers = { "go.mod", "go.work", ".git" },
+  settings = {
+    gopls = {
+      gofumpt = true,
+    },
+  },
+})
+
+vim.lsp.enable("gopls")
+vim.diagnostic.config({ virtual_text = true })

@@ -74,7 +74,13 @@ require("lazy").setup({
       "saghen/blink.cmp",
       version = "1.*",
       config = true,
+      opts = {
+        signature = { enabled = true },
+      },
     },
+    {
+      "christoomey/vim-tmux-navigator",
+    }
   },
 })
 
@@ -83,11 +89,19 @@ vim.lsp.config("gopls", {
   filetypes = { "go", "gomod", "gowork", "gotmpl" },
   root_markers = { "go.mod", "go.work", ".git" },
   settings = {
-    gopls = {
-      gofumpt = true,
-    },
+    gopls = { gofumpt = true },
   },
 })
 
-vim.lsp.enable("gopls")
+vim.lsp.config("intelephense", {
+  cmd = { "intelephense", "--stdio" },
+  filetypes = { "php" },
+  root_markers = { "composer.json", ".git" },
+})
+
+vim.lsp.enable({
+  "gopls",
+  "intelephense",
+})
+
 vim.diagnostic.config({ virtual_text = true })

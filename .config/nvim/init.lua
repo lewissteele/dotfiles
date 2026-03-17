@@ -80,8 +80,22 @@ require("lazy").setup({
     },
     {
       "christoomey/vim-tmux-navigator",
-    }
+    },
+    {
+      "nvim-treesitter/nvim-treesitter",
+      lazy = false,
+      build = ":TSUpdate",
+    },
   },
+})
+
+require('nvim-treesitter').install { "go", "php" }
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "go", "php" },
+  callback = function()
+    vim.treesitter.start()
+  end,
 })
 
 vim.lsp.config("gopls", {

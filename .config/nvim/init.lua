@@ -79,9 +79,6 @@ require("lazy").setup({
       },
     },
     {
-      "christoomey/vim-tmux-navigator",
-    },
-    {
       "nvim-treesitter/nvim-treesitter",
       lazy = false,
       build = ":TSUpdate",

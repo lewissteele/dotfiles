@@ -23,6 +23,7 @@ vim.opt.shiftwidth = 2
 vim.opt.spell = true
 vim.opt.spelllang = "en_gb"
 vim.opt.tabstop = 2
+vim.opt.updatetime = 300
 
 require("lazy").setup({
   spec = {
@@ -115,4 +116,10 @@ vim.lsp.enable({
   "intelephense",
 })
 
-vim.diagnostic.config({ virtual_text = true })
+vim.api.nvim_create_autocmd("CursorHold", {
+  callback = function()
+    vim.diagnostic.open_float(nil, {
+      scope = "cursor",
+    })
+  end,
+})

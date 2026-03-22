@@ -101,7 +101,10 @@ vim.lsp.config("gopls", {
   filetypes = { "go", "gomod", "gowork", "gotmpl" },
   root_markers = { "go.mod", "go.work", ".git" },
   settings = {
-    gopls = { gofumpt = true },
+    gopls = {
+      completeUnimported = true,
+      gofumpt = true,
+    },
   },
 })
 

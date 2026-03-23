@@ -68,10 +68,6 @@ require("lazy").setup({
       config = true,
     },
     {
-      "williamboman/mason.nvim",
-      config = true,
-    },
-    {
       "saghen/blink.cmp",
       version = "1.*",
       config = true,

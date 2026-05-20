@@ -66,6 +66,9 @@ require("lazy").setup({
           renderer = {
             highlight_opened_files = "name",
           },
+          filters = {
+            git_ignored = false,
+          },
         })
         vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
       end,

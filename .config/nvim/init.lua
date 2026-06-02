@@ -67,6 +67,7 @@ require("lazy").setup({
             highlight_opened_files = "name",
           },
           filters = {
+            custom = { "^.DS_Store$" },
             git_ignored = false,
           },
         })

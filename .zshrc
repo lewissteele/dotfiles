@@ -41,6 +41,7 @@ export HERD_PHP_82_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/
 export HERD_PHP_83_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/Herd/config/php/83/"
 export HERD_PHP_84_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/Herd/config/php/84/"
 export HERD_PHP_85_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/Herd/config/php/85/"
+export HERD_PHP_86_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/Herd/config/php/86/"
 export HISTFILE=~/.zhistory
 export HISTSIZE=1000000
 export LESS="-SRXF --tabs 2"

@@ -1,6 +1,5 @@
 setopt APPEND_HISTORY
 setopt AUTO_CD
-setopt EXTENDED_GLOB
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_FIND_NO_DUPS
 setopt HIST_IGNORE_ALL_DUPS
@@ -32,7 +31,6 @@ if [[ -e /opt/homebrew/share/antigen/antigen.zsh ]]; then
 fi
 
 export EDITOR=/opt/homebrew/bin/nvim
-export GOPATH=$HOME/.go
 export GPG_TTY=$(tty)
 export HERD_PHP_74_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/Herd/config/php/74/"
 export HERD_PHP_80_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/Herd/config/php/80/"
@@ -44,13 +42,13 @@ export HERD_PHP_85_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/
 export HERD_PHP_86_INI_SCAN_DIR="/Users/lewissteele/Library/Application Support/Herd/config/php/86/"
 export HISTFILE=~/.zhistory
 export HISTSIZE=1000000
+export HOMEBREW_NO_AUTO_UPDATE=1
 export LESS="-SRXF --tabs 2"
-export NPM_CONFIG_PREFIX="$HOME/.local"
+export NVM_DIR="$HOME/.nvm"
 export PROMPT="%B%1~ %b"
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
 
-path+=("$GOPATH/bin")
 path+=("$HOME/.composer/vendor/bin")
 path+=("$HOME/.local/bin")
 path+=("$HOME/Library/Application Support/Herd/bin")
@@ -63,3 +61,7 @@ alias vim='nvim'
 
 source <(fzf --zsh)
 
+if [[ -e $NVM_DIR/nvm.sh ]]; then
+  source $NVM_DIR/nvm.sh
+  source $NVM_DIR/bash_completion
+fi

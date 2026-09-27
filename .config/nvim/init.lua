@@ -76,7 +76,7 @@ require("lazy").setup({
     },
     {
       "okuuva/auto-save.nvim",
-      version = '^1.0.0',
+      version = "^1.0.0",
       config = true,
     },
     {
@@ -102,26 +102,20 @@ require("lazy").setup({
   },
 })
 
-require('nvim-treesitter').install { "go", "php" }
+require("nvim-treesitter").install { "javascript", "typescript", "jsdoc", "tsx", "php" }
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "go", "php" },
+  pattern = { "javascript", "javascriptreact", "typescript", "typescriptreact", "php" },
   callback = function()
     vim.treesitter.start()
     vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
   end,
 })
 
-vim.lsp.config("gopls", {
-  cmd = { "gopls" },
-  filetypes = { "go", "gomod", "gowork", "gotmpl" },
-  root_markers = { "go.mod", "go.work", ".git" },
-  settings = {
-    gopls = {
-      completeUnimported = true,
-      gofumpt = true,
-    },
-  },
+vim.lsp.config("tsc", {
+  cmd = { "tsc", "--lsp", "--stdio" },
+  filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+  root_markers = { "tsconfig.json", "jsconfig.json", "package.json", ".git" },
 })
 
 vim.lsp.config("intelephense", {
@@ -131,7 +125,7 @@ vim.lsp.config("intelephense", {
 })
 
 vim.lsp.enable({
-  "gopls",
+  "tsc",
   "intelephense",
 })
 

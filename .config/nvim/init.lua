@@ -45,52 +45,57 @@ require("lazy").setup({
         "nvim-lua/plenary.nvim",
         { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
       },
+      keys = {
+        { "<leader>ff", "<cmd>Telescope find_files<CR>" },
+        { "<leader>fg", "<cmd>Telescope live_grep<CR>" },
+        { "<leader>fb", "<cmd>Telescope buffers<CR>" },
+        { "<leader>fh", "<cmd>Telescope help_tags<CR>" },
+      },
       config = function()
-        local builtin = require("telescope.builtin")
-        vim.keymap.set("n", "<leader>ff", builtin.find_files)
-        vim.keymap.set("n", "<leader>fg", builtin.live_grep)
-        vim.keymap.set("n", "<leader>fb", builtin.buffers)
-        vim.keymap.set("n", "<leader>fh", builtin.help_tags)
+        require("telescope").load_extension("fzf")
       end,
     },
     {
       "nvim-tree/nvim-tree.lua",
       lazy = false,
       dependencies = { "nvim-tree/nvim-web-devicons" },
-      config = function()
-        require("nvim-tree").setup({
-          update_focused_file = {
-            enable = true,
-            update_root = false,
-          },
-          renderer = {
-            highlight_opened_files = "name",
-          },
-          filters = {
-            custom = { "^.DS_Store$" },
-            git_ignored = false,
-          },
-        })
-        vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
-      end,
+      keys = {
+        { "<leader>e", "<cmd>NvimTreeToggle<CR>" },
+      },
+      opts = {
+        update_focused_file = {
+          enable = true,
+          update_root = false,
+        },
+        renderer = {
+          highlight_opened_files = "name",
+        },
+        filters = {
+          custom = { "^\\.DS_Store$" },
+          git_ignored = false,
+        },
+      },
     },
     {
       "okuuva/auto-save.nvim",
-      version = "^1.0.0",
+      version = "1.*",
       config = true,
     },
     {
       "saghen/blink.cmp",
       version = "1.*",
-      config = true,
       opts = {
         signature = { enabled = true },
       },
     },
     {
       "nvim-treesitter/nvim-treesitter",
+      branch = "main",
       lazy = false,
       build = ":TSUpdate",
+      config = function()
+        require("nvim-treesitter").install({ "javascript", "typescript", "jsdoc", "tsx", "php" })
+      end,
     },
     {
       "windwp/nvim-autopairs",
@@ -102,9 +107,8 @@ require("lazy").setup({
   },
 })
 
-require("nvim-treesitter").install { "javascript", "typescript", "jsdoc", "tsx", "php" }
-
 vim.api.nvim_create_autocmd("FileType", {
+  group = vim.api.nvim_create_augroup("treesitter_start", { clear = true }),
   pattern = { "javascript", "javascriptreact", "typescript", "typescriptreact", "php" },
   callback = function()
     vim.treesitter.start()
@@ -124,15 +128,11 @@ vim.lsp.config("intelephense", {
   root_markers = { "composer.json", ".git" },
 })
 
-vim.lsp.enable({
-  "tsc",
-  "intelephense",
-})
+vim.lsp.enable({ "tsc", "intelephense" })
 
 vim.api.nvim_create_autocmd("CursorHold", {
+  group = vim.api.nvim_create_augroup("diagnostic_float", { clear = true }),
   callback = function()
-    vim.diagnostic.open_float(nil, {
-      scope = "cursor",
-    })
+    vim.diagnostic.open_float({ scope = "cursor", focus = false })
   end,
 })

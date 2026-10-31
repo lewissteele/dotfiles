@@ -31,8 +31,13 @@ require("lazy").setup({
       "catppuccin/nvim",
       name = "catppuccin",
       priority = 1000,
-      config = function()
-        vim.cmd.colorscheme("catppuccin-mocha")
+      opts = {
+        flavour = "auto",
+        background = { light = "latte", dark = "mocha" },
+      },
+      config = function(_, opts)
+        require("catppuccin").setup(opts)
+        vim.cmd.colorscheme("catppuccin")
       end,
     },
     {

@@ -1,5 +1,5 @@
 git:
   diffRenderers:
-    - command: delta --{{colorScheme}} --paging=never
+    - command: delta --{{colorScheme}} --features=catppuccin-dark --paging=never
     - type: extDiff
       command: difft --color=always --background={{colorScheme}} --context={{diffContext}}

@@ -17,3 +17,9 @@
   gpgSign = true
 [gpg]
   program = /opt/homebrew/bin/gpg
+[delta "catppuccin-dark"]
+  syntax-theme = Catppuccin Mocha
+  minus-style = syntax "#443244"
+  minus-emph-style = syntax "#5a3d50"
+  plus-style = syntax "#323c3f"
+  plus-emph-style = syntax "#404f4b"

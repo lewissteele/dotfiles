@@ -48,6 +48,7 @@ export NVM_DIR="$HOME/.nvm"
 export PROMPT="%B%1~ %b"
 export SAVEHIST=$HISTSIZE
 export VISUAL=$EDITOR
+export XDG_CONFIG_HOME="$HOME/.config"
 
 path+=("$HOME/.composer/vendor/bin")
 path+=("$HOME/.local/bin")

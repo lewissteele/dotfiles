@@ -1,0 +1,9 @@
+%YAML 1.2
+---
+name: PHP Without Opening Tag
+file_extensions:
+  - php
+scope: source.php.without-opening-tag
+contexts:
+  main:
+    - include: scope:source.php

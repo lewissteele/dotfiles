@@ -32,8 +32,7 @@ require("lazy").setup({
       name = "catppuccin",
       priority = 1000,
       opts = {
-        flavour = "auto",
-        background = { light = "latte", dark = "mocha" },
+        flavour = "mocha",
       },
       config = function(_, opts)
         require("catppuccin").setup(opts)
@@ -108,6 +107,16 @@ require("lazy").setup({
       opts = {
         check_ts = true,
       },
+    },
+    {
+      "RRethy/vim-illuminate",
+      event = { "BufReadPost", "BufNewFile" },
+      config = function()
+        require("illuminate").configure({
+          providers = { "lsp", "treesitter", "regex" },
+          delay = 100,
+        })
+      end,
     },
   },
 })

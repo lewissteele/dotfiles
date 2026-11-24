@@ -41,7 +41,9 @@ require("lazy").setup({
     },
     {
       "lewis6991/gitsigns.nvim",
-      config = true,
+      opts = {
+        current_line_blame = true,
+      },
     },
     {
       "nvim-telescope/telescope.nvim",
